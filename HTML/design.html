@@ -3,9 +3,20 @@
     <head>
         <title>PinDesign Palace</title>
         <link rel="stylesheet" href="/CSS/design.css">
+        <script src="design.js"></script>
     </head>
     <body>
-        <h1 style="color: wheat;">PinDesign Palace</h1>
+        <div class="navigation">
+            <h1 style="color: wheat;" class="logo">PinDesign Palace</h1>
+            <nav class="nav_bar">
+                <button class="nav_btn" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">Home</button>
+                <button class="nav_btn" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">About</button>
+                <button class="nav_btn" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">Features</button>
+                <button class="nav_btn" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">Blog</button>
+                <button class="nav_btn" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">Login</button>
+            </nav>
+        </div>
+
         <div class="section">
             <p style="color: blueviolet;">
                 Curate. Create. Redesign.<br/>
@@ -22,6 +33,6 @@
         <div class="section">
             <p>More features</p>
         </div>
-        <footer>Susan@2023</footer>
+        <footer class="footer"><b>Susan@2023</b></footer>
     </body>
 </html>

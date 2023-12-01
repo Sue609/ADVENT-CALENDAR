@@ -8,12 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.section:nth-child(1) {
-    background-color: #cac9b6;
-}
+
 
 .section:nth-child(2) {
-    background-color: #cac9b6;
+    background-color: #efc4b9;
 }
 
 .section:nth-child(3) {
@@ -21,5 +19,32 @@
 }
 
 .section:nth-child(4) {
-    background-color: wheat;
+    background-color: #dac2cf;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    height: 70px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.nav_bar {
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.nav_btn {
+    background-color: whitesmoke;
+    margin-right: 7px;
+    border-radius: 2px;
+    border: 2px, #32435f;
+    padding: 5px 10px;
 }
