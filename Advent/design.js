@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', function(){
                     content += "<img src='/Advent/images/day3.jpg' alt='Day 3 Image'>";
                     break;
 
+                case 'day31':
+                    content = "<h2>Set Your 2024 Goals</h2>";
+                    content += "<textarea id='goalTextArea' rows='5' placeholder='Write your goals here...'></textarea>";
+                    content += "<button onclick='saveGoals()'>Save Goals</button>";
+                    break;
+
                 default:
                     content = "<p>No content available.</p>";
             }
@@ -33,5 +39,12 @@ document.addEventListener('DOMContentLoaded', function(){
             contentDisplay.innerHTML = content;
         });
     });
+
+    // Function to save goals
+    function saveGoals() {
+        const goals = document.getElementById('goalTextArea').value;
+            // Save goals to storage or backend
+        alert("Goals saved successfully!");
+    }
 
 });
