@@ -1,0 +1,34 @@
+/* styling the header container section*/
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+/*Styling the title*/
+.header {
+    margin: 0;
+    flex: 1;
+}
+
+.button-container {
+    display: flex;
+}
+/* Style for the buttons found on the title*/
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #428bca;
+    border: 1px solid #357ebd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hoover {
+    background-color: #3071a9;
+}

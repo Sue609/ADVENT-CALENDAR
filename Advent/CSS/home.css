@@ -1,0 +1,49 @@
+.header-section {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-section {
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: center;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.intro-text {
+    flex: 1;
+    max-width: 48%; /* Adjusted width for text */
+    margin-right: 4%; /* Added some space between text and image */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rebeccapurple;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 48%; /* Adjusted width for image */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-container video {
+    width: 100%;
+    height: auto;
+}
+
+
+.calendar-section {
+    background-color: #d0d0d0;
+    text-align: center;
+    padding: 40px;
+}

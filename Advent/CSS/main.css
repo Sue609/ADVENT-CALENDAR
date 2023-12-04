@@ -6,55 +6,7 @@ body {
 .section {
     width: 100%;
 }
-.header-section {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
-}
 
-.intro-section {
-    background-color: #e0e0e0;
-    display: flex;
-    align-items: center;
-    padding: 40px;
-    justify-content: center;
-}
-
-.intro-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.intro-text {
-    flex: 1;
-    max-width: 48%; /* Adjusted width for text */
-    margin-right: 4%; /* Added some space between text and image */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rebeccapurple;
-}
-
-.image-container {
-    flex: 1;
-    max-width: 48%; /* Adjusted width for image */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.image-container video {
-    width: 100%;
-    height: auto;
-}
-
-
-.calendar-section {
-    background-color: #d0d0d0;
-    text-align: center;
-    padding: 40px;
-}
 
 .about-section {
     background-color: #c0c0c0;
@@ -109,19 +61,3 @@ body {
     }
 }
 
-/* Style for the buttons found on the title*/
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    background-color: #428bca;
-    border: 1px solid #357ebd;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button:hoover {
-    background-color: #3071a9;
-}
