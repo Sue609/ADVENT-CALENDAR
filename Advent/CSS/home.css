@@ -22,15 +22,15 @@
 
 .intro-text {
     flex: 1;
-    max-width: 48%; /* Adjusted width for text */
-    margin-right: 4%; /* Added some space between text and image */
+    max-width: 48%;
+    margin-right: 4%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rebeccapurple;
 }
 
 .image-container {
     flex: 1;
-    max-width: 48%; /* Adjusted width for image */
+    max-width: 48%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
