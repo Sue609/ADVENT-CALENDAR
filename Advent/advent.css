@@ -108,3 +108,20 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/* Style for the buttons found on the title*/
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #428bca;
+    border: 1px solid #357ebd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hoover {
+    background-color: #3071a9;
+}

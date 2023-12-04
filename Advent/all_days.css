@@ -82,6 +82,7 @@
 
 textarea {
     width: 95%;
+    min-height: 50%;
     margin-bottom: 10px;
     padding: 8px;
     border: 2px solid lightblue;
