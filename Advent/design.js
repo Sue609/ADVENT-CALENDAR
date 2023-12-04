@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
     const days = document.querySelectorAll('.day');
     const contentDisplay = document.getElementById('contentDisplay');
 
@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', function(){
                     content += "<img src='/Advent/images/day1.jpg' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
                     break;
 
-                    case 'day2':
-                        content = "<h2>Day 2 Content</h2>";
-                        content += "<p style='font-size: 20px;'>In the journey of pursuing greatness, challenges pave the path to triumph. 🛤️ Embrace the difficulties, for within them lie the seeds of growth and achievement. 🌱 Every obstacle is an opportunity to learn, to innovate, and to surpass limitations. 💡</p>";
-                        content += "<p style='font-size: 20px;'>Remember, the road to success often winds through the terrain of hard work, perseverance, and resilience. As you embark on this path, know that each hurdle overcome is a testament to your strength and determination. 🏋️‍♂️ Believe in your capacity to #DoHardThings, for it's in these challenges that your true potential thrives. 💪</p>";
-                        content += "<p style='font-size: 20px;'>Your perseverance today will sculpt the success stories of tomorrow. 📖 Keep pushing forward; greatness awaits! 🚀</p>";
-                        content += "<img src='/Advent/images/day2.png' alt='Day 2 Image' style='width: 400px; height: 200px;'>";
-                        content += "<h3>#DoHardThings</h3>";
-                        break;
+                case 'day2':
+                    content = "<h2>Day 2 Content</h2>";
+                    content += "<p style='font-size: 20px;'>In the journey of pursuing greatness, challenges pave the path to triumph. 🛤️ Embrace the difficulties, for within them lie the seeds of growth and achievement. 🌱 Every obstacle is an opportunity to learn, to innovate, and to surpass limitations. 💡</p>";
+                    content += "<p style='font-size: 20px;'>Remember, the road to success often winds through the terrain of hard work, perseverance, and resilience. As you embark on this path, know that each hurdle overcome is a testament to your strength and determination. 🏋️‍♂️ Believe in your capacity to #DoHardThings, for it's in these challenges that your true potential thrives. 💪</p>";
+                    content += "<p style='font-size: 20px;'>Your perseverance today will sculpt the success stories of tomorrow. 📖 Keep pushing forward; greatness awaits! 🚀</p>";
+                    content += "<img src='/Advent/images/day2.png' alt='Day 2 Image' style='width: 400px; height: 200px;'>";
+                    content += "<h3>#DoHardThings</h3>";
+                    break;
                     
 
                 case 'day3':
@@ -50,13 +50,20 @@ document.addEventListener('DOMContentLoaded', function(){
                     content += "<img src='/Advent/images/day3.jpg' alt='Day 3 Image' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
                     break;
 
-                    case 'day15':
-                        content = "<h2>Ready to play a Memory Game!</h2>";
-                        content += "<div class='memory-game'>";
-                        content += "<div class='cards' id='cards'></div>"
-                        content += "<div class='result' id='result'></div>"
-                        content += "</div>";
-                        break;
+                case 'day15':
+                    content = "<h2>Ready to play a Memory Game!</h2>";
+                    content += "<div class='memory-game'>";
+                    content += "<div class='cards' id='cards'></div>";
+                    content += "<div class='result' id='result'></div>";
+                    content += "</div>";
+                    content+= "<script "
+                       // Update content in the contentDisplay
+                    contentDisplay.innerHTML = content;
+                    const script = document.createElement('script');
+                    script.src = 'memoryGame.js';
+                    script.onload = loadMemoryGameLogic;
+                    document.body.appendChild(script);             
+                    break;
                     
 
                 case 'day17':

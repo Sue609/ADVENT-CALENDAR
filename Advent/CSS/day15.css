@@ -1,0 +1,16 @@
+.card {
+   width: 100px;
+   height: 100px;
+   background: #ecdada;
+   margin: 5px;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   line-height: 100px;
+   font-size: 24px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
