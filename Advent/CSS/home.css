@@ -37,7 +37,7 @@
     right: 0;
 }
 
-/* Define animation for snowflakes */
+
 @keyframes snowflakeAnimation {
     0% {
         transform: translateY(-100%);
@@ -49,7 +49,7 @@
     }
 }
 
-/* Define animation for red stars */
+
 @keyframes redStarAnimation {
     0% {
         transform: translateY(-100%);
@@ -61,7 +61,6 @@
     }
 }
 
-/* Styling for snowflake element */
 .snowflake {
     position: absolute;
     width: 5px;
@@ -71,7 +70,7 @@
     animation: snowflakeAnimation 5s linear infinite;
 }
 
-/* Styling for red star element */
+
 .red-star {
     position: absolute;
     width: 5px;
