@@ -5,7 +5,7 @@
 }
 
 .intro-section {
-    max-width: 1200px;
+    max-width: 100%;
     background-color: #e0e0e0;
     display: flex;
     align-items: center;
@@ -17,36 +17,80 @@
 }
 
 .intro-container {
-    max-width: 1200px;
-    width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
+    justify-content: space-between; 
     background-color: antiquewhite;
+    min-height: 700px;
 }
+
 
 .intro-text {
-    max-width: 80%;
+    width: 70%;
+    height: 700px;
+    position: relative;
     margin-right: 4%;
+    font-size: large;
+    background-color: #d0d0d0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: red;
-    text-align: center;
-    margin-bottom: 20px;
+    bottom: 0;
+    right: 0;
 }
 
+/* Define animation for snowflakes */
+@keyframes snowflakeAnimation {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+/* Define animation for red stars */
+@keyframes redStarAnimation {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+/* Styling for snowflake element */
+.snowflake {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: snowflakeAnimation 5s linear infinite;
+}
+
+/* Styling for red star element */
+.red-star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    animation: redStarAnimation 5s linear infinite;
+}
+
+
 .image-container {
-    max-width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 30%;
+    height: 700px;
 }
 
 .image-container video {
-    width: 100%;
-    height: auto;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;    
 }
 
 
