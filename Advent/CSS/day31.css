@@ -18,7 +18,7 @@ textarea {
     font-style: italic; 
 
     
-    background-image: linear-gradient(to bottom, transparent 3px, lightblue 2px, lightblue 4px, transparent 4px);
+    background-image: linear-gradient(to bottom, transparent 3px, #e981a4 2px, lightblue 4px, transparent 4px);
     background-size: 100% 20px;
     background-origin: content-box;
     line-height: 25px;
