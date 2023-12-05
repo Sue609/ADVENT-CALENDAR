@@ -3,7 +3,7 @@
     align-items: center;
     padding: 40px;
     justify-content: center;
-    background-image: url('/Advent/images/christmas-snowflakes-watercolour-texture.jpg');
+    /*background-image: url('/Advent/images/christmas-snowflakes-watercolour-texture.jpg');*/
     background-size: auto;
     background-size: cover;
 }
@@ -12,7 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    background-color: #ffeae5;
+    /*background-color: #daa9ae;*/
+    background-color: #1bc553;
     padding: 10px;
 }
 
@@ -23,7 +24,7 @@
     position: relative;
     margin-right: 4%;
     font-size: large;
-    background-color: #d1b3c4;
+    background-color: #d1b0c3;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     bottom: 0;
     right: 0;

@@ -3,9 +3,6 @@ body {
     padding: 0;
 }
 
-.section {
-    width: 100%;
-}
 
 
 .about-section {
@@ -13,8 +10,6 @@ body {
     text-align: center;
     padding: 40px;
 }
-
-
 
 .snowflake {
     position: absolute;
