@@ -4,18 +4,18 @@ body {
 }
 
 .section {
-    width: 90%;
+    width: 100%;
 }
 
 
 .about-section {
-    background-color: #c0c0c0;
+    background: #ffbfc5;;
     text-align: center;
     padding: 40px;
 }
 
 
-/* Style for snowflake */
+
 .snowflake {
     position: absolute;
     top: -10px;

@@ -2,6 +2,7 @@
     display: flex;
     gap: 5px;
     height: 600px;
+    background-color: #c3dfe3;
 }
 
 .days-container {
@@ -9,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
-    background-color: #D1C7BD;
+    background-color: #c3dfe3;
 }
 
 .content-display {  
