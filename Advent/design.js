@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<h2>Hangman Game</h2>";
                     content += "<div class='day4-container'>";
                     content += "<div class='hangman-box'>";
-                    content += "image src=''"
+                    content += "<img src='/Advent/images/hangman_images/hangman-0.svg' alt='hangmean-image'";
                     content += "</div>";
                     content += "</div>";
                     break;
