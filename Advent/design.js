@@ -51,14 +51,34 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<img src='/Advent/images/day3.jpg' alt='Day 3 Image' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
                     break;
 
-                case 'day4':
-                    content += "<h2>Hangman Game</h2>";
-                    content += "<div class='day4-container'>";
-                    content += "<div class='hangman-box'>";
-                    content += "<img src='/Advent/images/hangman_images/hangman-0.svg' alt='hangmean-image'";
-                    content += "</div>";
-                    content += "</div>";
-                    break;
+                    case 'day4':
+                        content += `
+                            <div class='day4-container'>
+                                <div class='hangman-box'>
+                                    <img src='/Advent/images/hangman_images/hangman-0.svg' alt='hangman-image'>
+                                    <h2>Hangman Game</h2>
+                                </div>
+                                <div class='game-box'>
+                                    <ul class='word-display'>
+                                        ${'<li class="letters"></li>'.repeat(7)}
+                                    </ul>
+                                    <h4 class='hint-text'>Hint: <b></b></h4>
+                                    <h4 class='guess-text'>Incorrect guess: <b>0 / 6</b></h4>
+                                    <div class='keyboard'>
+                                        <button>a</button><button>b</button><button>c</button><button>d</button>
+                                        <button>e</button><button>f</button><button>g</button><button>h</button>
+                                        <button>i</button><button>j</button><button>k</button><button>l</button>
+                                        <button>m</button><button>n</button><button>o</button><button>p</button>
+                                        <button>q</button><button>r</button><button>s</button><button>t</button>
+                                        <button>u</button><button>v</button><button>w</button><button>x</button>
+                                        <button>y</button><button>z</button>
+
+                                    </div>
+                                </div>
+                            </div>`;
+                        break;
+                    
+                    
                 case 'day15':
                     content = "<h2>Ready to play a Memory Game!</h2>";
                     content += "<div class='memory-game'>";
