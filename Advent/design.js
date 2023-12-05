@@ -51,6 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<img src='/Advent/images/day3.jpg' alt='Day 3 Image' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
                     break;
 
+                case 'day4':
+                    content += "<h2>Hangman Game</h2>";
+                    content += "<div class='day4-container'>";
+                    content += "<div class='hangman-box'>";
+                    content += "image src=''"
+                    content += "</div>";
+                    content += "</div>";
+                    break;
                 case 'day15':
                     content = "<h2>Ready to play a Memory Game!</h2>";
                     content += "<div class='memory-game'>";
@@ -76,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<img src='/Advent/images/fred_swaniker.jpg' alt='Fred Swaniker' style='width: 700px; height: 400px;'>";
                     content += "<h4 style='font-size: 20px;'>“All of us who are privileged enough to be healthy, to be alive, to have education and to have influence, our role is not to do small things and to solve small problems,” Swaniker said.</h4>";
                     content += "<h4 style='font-size: 20px;'>“The only way that we can justify privilege is by solving the world's biggest problems, and by doing hard things.”</h4>";
-                    break;
-                                    
+                    break;   
+                
 
                 case 'day31':
                     content = "<h2>Set Your 2024 Goals</h2>";
