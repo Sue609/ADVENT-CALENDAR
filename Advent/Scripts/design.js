@@ -69,27 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
                                         <h2>Hangman Game</h2>
                                     </div>
                                     <div class='game-box'>
-                                        <ul class='word-display'>
-                                            <li class="letters"></li>
-                                            <li class="letters"></li>
-                                            <li class="letters guessed">a</li>
-                                            <li class="letters"></li>
-                                            <li class="letters"></li>
-                                            <li class="letters"></li>
-                                            <li class="letters"></li>
-                                            
-                                        </ul>
+                                        <ul class='word-display'></ul>
                                         <h4 class='hint-text'>Hint: <b></b></h4>
                                         <h4 class='guesses-text'>Incorrect guess: <b>0 / 6</b></h4>
                                         <div class='keyboard'>
-                                            <button>a</button><button>b</button><button>c</button><button>d</button>
-                                            <button>e</button><button>f</button><button>g</button><button>h</button></br>
-                                            <button>i</button><button>j</button><button>k</button><button>l</button>
-                                            <button>m</button><button>n</button><button>o</button><button>p</button></br>
-                                            <button>q</button><button>r</button><button>s</button><button>t</button>
-                                            <button>u</button><button>v</button><button>w</button><button>x</button>
-                                            <button>y</button><button>z</button>
-
                                         </div>
                                     </div>
                                 </div>
