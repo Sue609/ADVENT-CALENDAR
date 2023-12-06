@@ -51,35 +51,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<img src='/Advent/images/day3.jpg' alt='Day 3 Image' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
                     break;
 
-                    case 'day4':
+                case 'day5':
                         content += `
-                            <div class='game-model'>
-                                <div class='content'>
-                                    <img src='/Advent/images/hangman_images/lost.gif' alt='crying gif'>
-                                    <h3>Game Over!</h4>
-                                    <p>The correct word was: <b>rainbow</b></p>
-                                    <button class='play-again'>Play Again</button>
-
-                                </div>
+                        <body class="body-game">
+                        <div class="game-modal">
+                            <div class="content">
+                                <img src="/Advent/images/hangman_images/victory.gif" alt="gif">
+                                <h4>Game Over!</h4>
+                                <p>The correct word was: <b>rainbow</b></p>
+                                <button class="play-again">Play Again</button>
                             </div>
-                            <div class='hangman-body'>
-                                <div class='day4-container'>
-                                    <div class='hangman-box'>
-                                        <img src='/Advent/images/hangman_images/hangman-0.svg' alt='hangman-image'>
-                                        <h2>Hangman Game</h2>
-                                    </div>
-                                    <div class='game-box'>
-                                        <ul class='word-display'></ul>
-                                        <h4 class='hint-text'>Hint: <b></b></h4>
-                                        <h4 class='guesses-text'>Incorrect guess: <b>0 / 6</b></h4>
-                                        <div class='keyboard'>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>`;
-                        break;
-                    
-                    
+                        </div>
+                        <div class="container">
+                            <div class="hangman-box">
+                                <img src="/Advent/images/hangman_images/hangman-0.svg" draggable="false" alt="hangman-img">
+                                <h1>Hangman Game</h1>
+                            </div>
+                            <div class="game-box">
+                                <ul class="word-display"></ul>
+                                <h4 class="hint-text">Hint: <b></b></h4>
+                                <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+                                <div class="keyboard"></div>
+                            </div>
+                        </div>
+                    </body>`;
+                    break;
+
                 case 'day15':
                     content = "<h2>Ready to play a Memory Game!</h2>";
                     content += "<div class='memory-game'>";
@@ -128,7 +125,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             contentDisplay.innerHTML = content;
 
-            // Event listeners after setting the content
+            if (dayId === 'day5') {
+                hangmanGame();
+            }
+            
             if (dayId === 'day31') {
                 document.getElementById('textColorPicker').addEventListener('change', changeTextColor);
                 document.getElementById('fontSize').addEventListener('change', changeFontSize);
