@@ -96,12 +96,19 @@
 }
 
 .keyboard button {
-    background: green;
+    background: rgb(102, 206, 247);
     padding: 7px;
     width: calc(10 / 9 -5px);
     color: antiquewhite;
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    padding: 7px;
+    border: none;
+}
 
+.keyboard button:hover {
+    background: #7b82e4;
 }

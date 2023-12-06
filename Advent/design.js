@@ -53,6 +53,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     case 'day4':
                         content += `
+                            <div class='game-model'>
+                                <div class='content'>
+                                    <img src='/Advent/images/hangman_images/lost.gif' alt='crying gif'>
+                                    <h3>Game Over!</h4>
+                                    <p>The correct word was: <b>rainbow</b></p>
+                                    <button class='play-again'>Play Again</button>
+
+                                </div>
+                            </div>
                             <div class='hangman-body'>
                                 <div class='day4-container'>
                                     <div class='hangman-box'>
