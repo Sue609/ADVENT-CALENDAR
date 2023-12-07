@@ -67,15 +67,15 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <button id="clearButton">Clear</button>
                                     <button id='showChristmasGIFs'>GIFs</button>
                                     <div id ='christmasGIFs' style='display: none'>
-                                        <img src='/Advent/images/day4-Images/christmas-tree.gif' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/gift.gif' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/gift2.gif' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/santa.gif' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/santaStuck.gif' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/snowman3.jpg' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/snowman4.gif' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/snowman5.jpg' class='christmasGIFs'>
-                                        <img src='/Advent/images/day4-Images/xmassTree.gif' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/christmas-tree.gif' class='christmasGIFs' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/gift.gif' class='christmasGIF' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/gift2.gif' class='christmasGIF' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/santa.gif' class='christmasGIF' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/santaStuck.gif' class='christmasGIF' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/snowman3.jpg' class='christmasGIF' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/snowman4.gif' class='christmasGIF' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/snowman5.jpg' class='christmasGIF' style='width: 100px; height: 100px'>
+                                        <img src='/Advent/images/day4-Images/xmassTree.gif' class='christmasGIF' style='width: 100px; height: 100px'>
                                     </div>
                                 </div>
                                 <div>

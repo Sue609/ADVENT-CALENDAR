@@ -70,7 +70,7 @@ function hangmanGame () {
     playAgainBtn.addEventListener("click", getRandomWord);
 
     let timer;
-    let timeRemaining = 0; // Total time in seconds (adjust as needed)
+    let timeRemaining = 100; // Total time in seconds (adjust as needed)
 
     const startTimer = () => {
         timer = setInterval(() => {

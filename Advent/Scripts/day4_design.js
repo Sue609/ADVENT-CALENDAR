@@ -106,6 +106,53 @@ function DesignArt() {
     
     // SECTION 2
     // SHOW/HIDE CHRISTMAS GIFs SECTION
+    function showChristmasGIFs() {
+        const showGIFsBTN = document.getElementById('showChristmasGIFs');
+        const christmasGIFsDIV = document.getElementById('christmasGIFs');
+    
+        showGIFsBTN.addEventListener('click', function() {
+            // Show Christmas GIFs
+            christmasGIFsDIV.style.display = 'block';
+        });
+    
+        // Event listeners for each GIF icon for dragging
+        const christmasGIFs = document.querySelectorAll('.christmasGIF');
+    
+        christmasGIFs.forEach(function(gif) {
+            gif.addEventListener('dragstart', function(event) {
+                event.dataTransfer.setData('text/plain', gif.src); // Set the image URL as drag data
+            });
+        });
+    
+        // Event listeners for canvas to handle dropping the GIF icons
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+    
+        canvas.addEventListener('dragover', function(event) {
+            event.preventDefault();
+        });
+    
+        canvas.addEventListener('drop', function(event) {
+            event.preventDefault();
+            const x = event.clientX - canvas.getBoundingClientRect().left;
+            const y = event.clientY - canvas.getBoundingClientRect().top;
+    
+            const imageURL = event.dataTransfer.getData('text/plain');
+            const img = new Image();
+            img.src = imageURL;
+    
+            img.onload = function() {
+                ctx.drawImage(img, x, y, img.width, img.height); // Draw the dropped image at the specified location
+            };
+        });
+
+        function ResizingChristmasGIF() {
+
+        }
+        ResizingChristmasGIF();
+    }
+    
+    showChristmasGIFs();
     
 }
 
