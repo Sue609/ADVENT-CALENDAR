@@ -68,7 +68,39 @@ function hangmanGame () {
 
     getRandomWord();
     playAgainBtn.addEventListener("click", getRandomWord);
-    
+
+    let timer;
+    let timeRemaining = 20; // Total time in seconds (adjust as needed)
+
+    const startTimer = () => {
+        timer = setInterval(() => {
+            timeRemaining--;
+            document.querySelector('.timer').innerText = `Time: ${timeRemaining} seconds`;
+
+            if (timeRemaining <= 0) {
+                clearInterval(timer);
+                // Add code to handle when the time is up (game over or other action)
+                gameOver(false); // For example, end the game when the time runs out
+            }
+        }, 1000); // Update the timer every second (1000 milliseconds)
+    };
+
+    const resetTimer = () => {
+        clearInterval(timer);
+        timeRemaining = 20; // Reset the time
+        startTimer(); // Start the timer again
+    };
+
+    // Add the startTimer function call when starting the game
+    getRandomWord();
+    startTimer(); // Start the timer when the game begins
+
+    // Reset the timer when resetting the game
+    playAgainBtn.addEventListener("click", () => {
+        getRandomWord();
+        resetTimer(); // Reset the timer when starting a new game
+    });
+
 }
 
 

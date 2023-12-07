@@ -52,8 +52,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     break;
 
                 case 'day5':
-                        content += `
+                    content += `
                         <body class="body-game">
+                        <!-- Inside your game box where the hangman, word display, and keyboard are located -->
+                        <div class="timer-box">
+                            <span class="timer">Time: 0 seconds</span>
+                        </div>
+
                         <div class="game-modal">
                             <div class="content">
                                 <img src="/Advent/images/hangman_images/victory.gif" alt="gif">
