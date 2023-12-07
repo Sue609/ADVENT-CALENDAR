@@ -102,7 +102,11 @@ function DesignArt() {
         ctx.fillRect(data.x, data.y, data.width, data.height);
     }
 
-        
+    
+    
+    // SECTION 2
+    // SHOW/HIDE CHRISTMAS GIFs SECTION
+    
 }
 
 DesignArt();

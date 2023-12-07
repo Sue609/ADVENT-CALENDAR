@@ -57,18 +57,29 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class='container-day4'>
                                 <h2>Artwork and Design</h2>
                                 <P>Design your own christmass giftcard</p>
-                                <div>
-                                    <canvas id='myCanvas' width='400' height='400'></canvas>
-                                </div>
                                 <div class='design-tools'>
                                     <input type='color' id='colorPicker'>
                                     <button id='penTool'>Pen</button>
                                     <input type='text' id='textInput' placeholder'start designing...'>
                                     <button id='rectangleTool'>Rectangle</button>
                                     <button id='saveButton'>Save</button>
-                                    <button id="saveButton">Save Card</button>
                                     <button id="undoButton">Undo</button>
                                     <button id="clearButton">Clear</button>
+                                    <button id='showChristmasGIFs'>GIFs</button>
+                                    <div id ='christmasGIFs' style='display: none'>
+                                        <img src='/Advent/images/day4-Images/christmas-tree.gif' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/gift.gif' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/gift2.gif' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/santa.gif' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/santaStuck.gif' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/snowman3.jpg' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/snowman4.gif' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/snowman5.jpg' class='christmasGIFs'>
+                                        <img src='/Advent/images/day4-Images/xmassTree.gif' class='christmasGIFs'>
+                                    </div>
+                                </div>
+                                <div>
+                                    <canvas id='myCanvas' width='400' height='400'></canvas>
                                 </div>
                             </div>
                         <body>    
