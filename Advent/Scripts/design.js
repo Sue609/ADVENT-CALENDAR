@@ -53,21 +53,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day4':
                     content += `
-                        <div class='container-day4'>
-                            <h2>Artwork and Design</h2>
-                            <P>Design your own christmass giftcard</p>
-                            <canvas id='myCanvas' width='400' height='400'></canvas>
-                            <div class='design-tools'>
-                                <input type='color' id='colorPicker'>
-                                <button id='penTool'>Pen</button>
-                                <input type='text' id='textInput' placeholder'start designing...'>
-                                <button id='rectangleTool'>Rectangle</button>
-                                <button id='saveButton'>Save</button>
-                                <button id="saveButton">Save Card</button>
-                                <button id="undoButton">Undo</button>
-                                <button id="clearButton">Clear</button>
+                        <body onload='DesignArt()'>
+                            <div class='container-day4'>
+                                <h2>Artwork and Design</h2>
+                                <P>Design your own christmass giftcard</p>
+                                <div>
+                                    <canvas id='myCanvas' width='400' height='400'></canvas>
+                                </div>
+                                <div class='design-tools'>
+                                    <input type='color' id='colorPicker'>
+                                    <button id='penTool'>Pen</button>
+                                    <input type='text' id='textInput' placeholder'start designing...'>
+                                    <button id='rectangleTool'>Rectangle</button>
+                                    <button id='saveButton'>Save</button>
+                                    <button id="saveButton">Save Card</button>
+                                    <button id="undoButton">Undo</button>
+                                    <button id="clearButton">Clear</button>
+                                </div>
                             </div>
-                        </div>    
+                        <body>    
                     `;
                     break;
 
@@ -145,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
             contentDisplay.innerHTML = content;
 
             if (dayId === 'day4') {
-                DesginArt();
+                DesignArt();
             }
 
             if (dayId === 'day5') {
