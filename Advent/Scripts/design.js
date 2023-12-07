@@ -51,6 +51,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<img src='/Advent/images/day3.jpg' alt='Day 3 Image' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
                     break;
 
+                case 'day4':
+                    content += `
+                        <div class='container-day4'>
+                            <h2>Artwork and Design</h2>
+                            <P>Design your own christmass giftcard</p>
+                            <canvas id='myCanvas' width='400' height='400'></canvas>
+                            <div class='design-tools'>
+                                <input type='color' id='colorPicker'>
+                                <button id='penTool'>Pen</button>
+                                <input type='text' id='textInput' placeholder'start designing...'>
+                                <button id='rectangleTool'>Rectangle</button>
+                                <button id='saveButton'>Save</button>
+                                <button id="saveButton">Save Card</button>
+                                <button id="undoButton">Undo</button>
+                                <button id="clearButton">Clear</button>
+                            </div>
+                        </div>    
+                    `;
+                    break;
+
                 case 'day5':
                     content += `
                         <body class="body-game">
@@ -88,13 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<div class='cards' id='cards'></div>";
                     content += "<div class='result' id='result'></div>";
                     content += "</div>";
-                    content+= "<script "
-                       // Update content in the contentDisplay
-                    contentDisplay.innerHTML = content;
-                    const script = document.createElement('script');
-                    script.src = 'memoryGame.js';
-                    script.onload = loadMemoryGameLogic;
-                    document.body.appendChild(script);             
+                    content+= "<script "            
                     break;
                     
 
@@ -121,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<option value='16px'>16px'>16px</option>";
                     content += "</select>";
                     content += "<textarea id='goalTextArea' rows='5' placeholder='Write your goals here...'></textarea>";
-                    content += "<button id='saveButton' style='font-size: 20px;'>Save Goals</button>";
+                    content += "<button class='day31-button' id='saveButton' style='font-size: 20px;'>Save Goals</button>";
                     break;
 
                 default:
@@ -130,8 +144,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
             contentDisplay.innerHTML = content;
 
+            if (dayId === 'day4') {
+                DesginArt();
+            }
+
             if (dayId === 'day5') {
                 hangmanGame();
+            }
+
+            if (dayId === 'day15') {
+                loadMemoryGameLogic();
             }
             
             if (dayId === 'day31') {

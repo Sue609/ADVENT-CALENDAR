@@ -24,7 +24,7 @@ textarea {
     line-height: 25px;
 }
 
-button {
+.day31-button {
     padding: 8px 16px;
     background-color: rgb(65, 168, 65);
     color: white;
