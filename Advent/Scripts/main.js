@@ -58,15 +58,16 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <h2>Artwork and Design</h2>
                                 <P>Design your own christmass giftcard</p>
                                 <div class='design-tools'>
+                                    <input type="text" id="textInput" placeholder="Enter text">
+                                    <button id="addText">Add Text</button>
                                     <input type='color' id='colorPicker'>
                                     <button id='penTool'>Pen</button>
                                     <input type="range" id="penSizeInput" min="1" max="20" value="5">
                                     <input type='text' id='textInput' placeholder'start designing...'>
-                                    <button id='rectangleTool'>Rectangle</button>
                                     <button id='saveDrawing'>Save</button>
-                                    <button id="undoButton">Undo</button>
                                     <button id="clearCanvas">Clear Canvas</button>
                                     <button id='showChristmasGIFs'>GIFs</button>
+                                    <canvas id="myCanvas"></canvas>
                                     <div id ='christmasGIFs' style='display: none'>
                                         <img src='/Advent/images/day4-Images/christmas-tree.gif' class='christmasGIFs' style='width: 100px; height: 100px'>
                                         <img src='/Advent/images/day4-Images/gift.gif' class='christmasGIF' style='width: 100px; height: 100px'>

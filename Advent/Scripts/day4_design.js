@@ -3,13 +3,23 @@ function DesignArt() {
     const ctx = canvas.getContext('2d');
 
     // Initial canvas setup
-    canvas.style.border = '1px solid black';
-    canvas.style.backgroundColor = 'lightpink';
+    canvas.style.border = '2px solid black';
+    canvas.style.backgroundColor = 'white';
     canvas.width = 700;
     canvas.height = 500;
 
     let isDrawing = false;
     let penColor = '#000000';
+
+    let isAddingText = false;
+    let textX = 50;
+    let textY = 50;
+    let textBoxWidth = 200;
+    let textBoxHeight = 100;
+    let isDragging = false;
+    let isResizing = false;
+    let prevX, prevY;
+    let offsetX, offsetY;
 
     let drawingData = []; // To store drawing data for redraw
 
@@ -40,43 +50,49 @@ function DesignArt() {
         isDrawing = false;
     });
 
-    // Pen tool button functionality
-    const penToolButton = document.getElementById('penTool');
-    penToolButton.addEventListener('click', function() {
-        // Toggle 'active' class to indicate pen tool selection
-        penToolButton.classList.toggle('active');    
-    });
 
-    // color picker that uses its value to set the pen color when user selects
-    // a color
-    const colorPicker = document.getElementById('colorPicker');
-    colorPicker.addEventListener('change', function() {
-        penColor = colorPicker.value;
-    });
+    // function for adding a text box and allow user to 
+    // function for styling the different buttons for the canvas for drawing
+    function buttonStyles() {
+        // Pen tool button functionality
+        const penToolButton = document.getElementById('penTool');
+        penToolButton.addEventListener('click', function() {
+            // Toggle 'active' class to indicate pen tool selection
+            penToolButton.classList.toggle('active');    
+        });
 
-    // logic for the user to adjust the pensize
-    const penSizeInput = document.getElementById('penSizeInput');
-    penSizeInput.addEventListener('change', function() {
-        penSizeInput = parseInt(penSizeInput.value);
-        ctx.lineWidth = penSizeInput;
-    });
+        // color picker that uses its value to set the pen color when user selects
+        // a color
+        const colorPicker = document.getElementById('colorPicker');
+        colorPicker.addEventListener('change', function() {
+            penColor = colorPicker.value;
+        });
 
-    // logic for user to clear the entire canvas
-    const clearButton = document.getElementById('clearCanvas');
-    clearButton.addEventListener('click', function() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drawingData = [];
-    });
+        // logic for the user to adjust the pensize
+        const penSizeInput = document.getElementById('penSizeInput');
+        penSizeInput.addEventListener('change', function() {
+            penSizeInput = parseInt(penSizeInput.value);
+            ctx.lineWidth = penSizeInput;
+        });
 
-    // logic to save the art design
-    const saveButton = document.getElementById('saveDrawing');
-    saveButton.addEventListener('click', function() {
-        const image = canvas.toDataURL();
-        const link = document.createElement('a');
-        link.href = image;
-        link.download = 'design.png';
-        link.click();
-    });
+        // logic for user to clear the entire canvas
+        const clearButton = document.getElementById('clearCanvas');
+        clearButton.addEventListener('click', function() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawingData = [];
+        });
+
+        // logic to save the art design
+        const saveButton = document.getElementById('saveDrawing');
+        saveButton.addEventListener('click', function() {
+            const image = canvas.toDataURL();
+            const link = document.createElement('a');
+            link.href = image;
+            link.download = 'design.png';
+            link.click();
+        });
+
+    }
     
     function showChristmasGIFs() {
         const showGIFsBTN = document.getElementById('showChristmasGIFs');
@@ -313,6 +329,8 @@ function DesignArt() {
         });
     }
     showChristmasGIFs();
+
+    buttonStyles();
     
 }
 
