@@ -109,10 +109,18 @@ function DesignArt() {
     function showChristmasGIFs() {
         const showGIFsBTN = document.getElementById('showChristmasGIFs');
         const christmasGIFsDIV = document.getElementById('christmasGIFs');
-    
+        // track the visibility state of GIFs
+        let gifsVisible = false
+
         showGIFsBTN.addEventListener('click', function() {
-            // Show Christmas GIFs
-            christmasGIFsDIV.style.display = 'block';
+           if (gifsVisible) {
+                // Hide Christmas GIFs
+                christmasGIFsDIV.style.display = 'none';
+           } else {
+                // show christmas GIFs
+                christmasGIFsDIV.style.display = 'block';
+           }
+           gifsVisible = !gifsVisible
         });
     
         // Event listeners for each GIF icon for dragging
@@ -146,9 +154,8 @@ function DesignArt() {
             };
         });
 
-        function ResizingChristmasGIF() {
-
-        }
+        
+        // Function for resizing the gifs and being able to drag the gifs in the canvas
         ResizingChristmasGIF();
     }
     

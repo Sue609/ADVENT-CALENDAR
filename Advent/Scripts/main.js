@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </div>
                                 </div>
                                 <div>
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
-                                    <canvas id='myCanvas' width='400' height='400'></canvas>
+                                <script src="https://cdn.jsdelivr.net/npm/konva@8.2.5/konva.min.js"></script>
+                                    <canvas id='myCanvas'></canvas>
                                 </div>
                             </div>
                         <body>    
