@@ -10,7 +10,6 @@ function DesignArt() {
 
     let isDrawing = false;
     let penColor = '#000000';
-    let penSize = 5;
 
     let drawingData = []; // To store drawing data for redraw
 
@@ -28,11 +27,11 @@ function DesignArt() {
         if (isDrawing) {
             ctx.lineTo(e.offsetX, e.offsetY);
             ctx.strokeStyle = penColor;
-            ctx.lineWidth = penSize;
+            ctx.lineWidth = penSizeInput;
             ctx.lineCap = 'round';
             ctx.lineJoin = 'round';
             ctx.stroke();
-            drawingData.push({ type: 'pen', data: { x: e.offsetX, y: e.offsetY, color: penColor, size: penSize } });
+            drawingData.push({ type: 'pen', data: { x: e.offsetX, y: e.offsetY, color: penColor, size: penSizeInput } });
         }
     });
 
@@ -45,8 +44,38 @@ function DesignArt() {
     const penToolButton = document.getElementById('penTool');
     penToolButton.addEventListener('click', function() {
         // Toggle 'active' class to indicate pen tool selection
-        penToolButton.classList.toggle('active');
-        // Other logic to set penColor, penSize, etc.
+        penToolButton.classList.toggle('active');    
+    });
+
+    // color picker that uses its value to set the pen color when user selects
+    // a color
+    const colorPicker = document.getElementById('colorPicker');
+    colorPicker.addEventListener('change', function() {
+        penColor = colorPicker.value;
+    });
+
+    // logic for the user to adjust the pensize
+    const penSizeInput = document.getElementById('penSizeInput');
+    penSizeInput.addEventListener('change', function() {
+        penSizeInput = parseInt(penSizeInput.value);
+        ctx.lineWidth = penSizeInput;
+    });
+
+    // logic for user to clear the entire canvas
+    const clearButton = document.getElementById('clearCanvas');
+    clearButton.addEventListener('click', function() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawingData = [];
+    });
+
+    // logic to save the art design
+    const saveButton = document.getElementById('saveDrawing');
+    saveButton.addEventListener('click', function() {
+        const image = canvas.toDataURL();
+        const link = document.createElement('a');
+        link.href = image;
+        link.download = 'design.png';
+        link.click();
     });
     
     function showChristmasGIFs() {

@@ -60,11 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class='design-tools'>
                                     <input type='color' id='colorPicker'>
                                     <button id='penTool'>Pen</button>
+                                    <input type="range" id="penSizeInput" min="1" max="20" value="5">
                                     <input type='text' id='textInput' placeholder'start designing...'>
                                     <button id='rectangleTool'>Rectangle</button>
-                                    <button id='saveButton'>Save</button>
+                                    <button id='saveDrawing'>Save</button>
                                     <button id="undoButton">Undo</button>
-                                    <button id="clearButton">Clear</button>
+                                    <button id="clearCanvas">Clear Canvas</button>
                                     <button id='showChristmasGIFs'>GIFs</button>
                                     <div id ='christmasGIFs' style='display: none'>
                                         <img src='/Advent/images/day4-Images/christmas-tree.gif' class='christmasGIFs' style='width: 100px; height: 100px'>
