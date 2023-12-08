@@ -3,23 +3,13 @@ function DesignArt() {
     const ctx = canvas.getContext('2d');
 
     // Initial canvas setup
-    canvas.style.border = '2px solid black';
+    canvas.style.border = '3px solid black';
     canvas.style.backgroundColor = 'white';
     canvas.width = 700;
-    canvas.height = 500;
+    canvas.height = 450;
 
     let isDrawing = false;
     let penColor = '#000000';
-
-    let isAddingText = false;
-    let textX = 50;
-    let textY = 50;
-    let textBoxWidth = 200;
-    let textBoxHeight = 100;
-    let isDragging = false;
-    let isResizing = false;
-    let prevX, prevY;
-    let offsetX, offsetY;
 
     let drawingData = []; // To store drawing data for redraw
 
@@ -51,7 +41,6 @@ function DesignArt() {
     });
 
 
-    // function for adding a text box and allow user to 
     // function for styling the different buttons for the canvas for drawing
     function buttonStyles() {
         // Pen tool button functionality
@@ -328,6 +317,7 @@ function DesignArt() {
             };
         });
     }
+
     showChristmasGIFs();
 
     buttonStyles();
