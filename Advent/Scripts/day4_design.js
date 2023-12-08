@@ -109,30 +109,28 @@ function DesignArt() {
     function showChristmasGIFs() {
         const showGIFsBTN = document.getElementById('showChristmasGIFs');
         const christmasGIFsDIV = document.getElementById('christmasGIFs');
-        // track the visibility state of GIFs
-        let gifsVisible = false
-
+        let gifsVisible = false;
+    
         showGIFsBTN.addEventListener('click', function() {
-           if (gifsVisible) {
-                // Hide Christmas GIFs
+            if (gifsVisible) {
                 christmasGIFsDIV.style.display = 'none';
-           } else {
-                // show christmas GIFs
+            } else {
                 christmasGIFsDIV.style.display = 'block';
-           }
-           gifsVisible = !gifsVisible
+            }
+            gifsVisible = !gifsVisible;
         });
     
-        // Event listeners for each GIF icon for dragging
         const christmasGIFs = document.querySelectorAll('.christmasGIF');
-    
         christmasGIFs.forEach(function(gif) {
             gif.addEventListener('dragstart', function(event) {
-                event.dataTransfer.setData('text/plain', gif.src); // Set the image URL as drag data
+                event.dataTransfer.setData('text/plain', JSON.stringify({
+                    src: gif.src,
+                    width: gif.width,
+                    height: gif.height
+                }));
             });
         });
     
-        // Event listeners for canvas to handle dropping the GIF icons
         const canvas = document.getElementById('myCanvas');
         const ctx = canvas.getContext('2d');
     
@@ -145,19 +143,204 @@ function DesignArt() {
             const x = event.clientX - canvas.getBoundingClientRect().left;
             const y = event.clientY - canvas.getBoundingClientRect().top;
     
-            const imageURL = event.dataTransfer.getData('text/plain');
+            const data = JSON.parse(event.dataTransfer.getData('text/plain'));
             const img = new Image();
-            img.src = imageURL;
+            img.src = data.src;
+            const width = data.width;
+            const height = data.height;
     
             img.onload = function() {
-                ctx.drawImage(img, x, y, img.width, img.height); // Draw the dropped image at the specified location
+                ctx.drawImage(img, x, y, width, height); // Draw the dropped image at the specified location with original size
+    
+                let isResizing = false;
+                let prevX, prevY;
+    
+                canvas.addEventListener('mousedown', function(e) {
+                    const startX = e.clientX - canvas.getBoundingClientRect().left;
+                    const startY = e.clientY - canvas.getBoundingClientRect().top;
+    
+                    if (
+                        startX >= x &&
+                        startX <= x + width &&
+                        startY >= y &&
+                        startY <= y + height
+                    ) {
+                        isResizing = true;
+                        prevX = startX;
+                        prevY = startY;
+                    }
+                });
+    
+                canvas.addEventListener('mousemove', function(e) {
+                    if (isResizing) {
+                        const newX = e.clientX - canvas.getBoundingClientRect().left;
+                        const newY = e.clientY - canvas.getBoundingClientRect().top;
+    
+                        const newWidth = width + (newX - prevX);
+                        const newHeight = height + (newY - prevY);
+    
+                        ctx.clearRect(x, y, canvas.width, canvas.height);
+                        ctx.drawImage(img, x, y, newWidth, newHeight);
+    
+                        prevX = newX;
+                        prevY = newY;
+                    }
+                });
+    
+                canvas.addEventListener('mouseup', function() {
+                    isResizing = false;
+                    width = img.width;
+                    height = img.height;
+                });
+    
+                canvas.addEventListener('mouseleave', function() {
+                    isResizing = false;
+                });
             };
         });
 
-        
-        // Function for resizing the gifs and being able to drag the gifs in the canvas
-        ResizingChristmasGIF();
+
+        canvas.addEventListener('drop', function(event) {
+            event.preventDefault();
+            const x = event.clientX - canvas.getBoundingClientRect().left;
+            const y = event.clientY - canvas.getBoundingClientRect().top;
+    
+            const data = JSON.parse(event.dataTransfer.getData('text/plain'));
+            const img = new Image();
+            img.src = data.src;
+            const width = data.width;
+            const height = data.height;
+    
+            img.onload = function() {
+                let isResizing = false;
+                let isDragging = false;
+                let prevX, prevY;
+                let imageX = x;
+                let imageY = y;
+    
+                ctx.drawImage(img, imageX, imageY, width, height);
+    
+                canvas.addEventListener('mousedown', function(e) {
+                    const startX = e.clientX - canvas.getBoundingClientRect().left;
+                    const startY = e.clientY - canvas.getBoundingClientRect().top;
+    
+                    if (
+                        startX >= imageX &&
+                        startX <= imageX + width &&
+                        startY >= imageY &&
+                        startY <= imageY + height
+                    ) {
+                        isDragging = true;
+                        prevX = startX;
+                        prevY = startY;
+                    }
+                });
+    
+                canvas.addEventListener('mousemove', function(e) {
+                    if (isDragging) {
+                        const newX = e.clientX - canvas.getBoundingClientRect().left;
+                        const newY = e.clientY - canvas.getBoundingClientRect().top;
+    
+                        const deltaX = newX - prevX;
+                        const deltaY = newY - prevY;
+    
+                        imageX += deltaX;
+                        imageY += deltaY;
+    
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        ctx.drawImage(img, imageX, imageY, width, height);
+    
+                        prevX = newX;
+                        prevY = newY;
+                    }
+                });
+    
+                canvas.addEventListener('mouseup', function() {
+                    isDragging = false;
+                });
+    
+                canvas.addEventListener('mouseleave', function() {
+                    isDragging = false;
+                });
+            };
+        });
+
+        const placedGIFs = []; // To keep track of placed GIFs and their positions
+
+        canvas.addEventListener('drop', function(event) {
+            event.preventDefault();
+            const x = event.clientX - canvas.getBoundingClientRect().left;
+            const y = event.clientY - canvas.getBoundingClientRect().top;
+    
+            const data = JSON.parse(event.dataTransfer.getData('text/plain'));
+            const img = new Image();
+            img.src = data.src;
+            const width = data.width;
+            const height = data.height;
+    
+            img.onload = function() {
+                let isDragging = false;
+                let prevX, prevY;
+                let imageX = x;
+                let imageY = y;
+    
+                placedGIFs.push({ img, imageX, imageY, width, height }); // Store the placed GIF and its position
+    
+                placedGIFs.forEach(({ img, imageX, imageY, width, height }) => {
+                    ctx.drawImage(img, imageX, imageY, width, height);
+                });
+    
+                canvas.addEventListener('mousedown', function(e) {
+                    const startX = e.clientX - canvas.getBoundingClientRect().left;
+                    const startY = e.clientY - canvas.getBoundingClientRect().top;
+    
+                    placedGIFs.forEach(({ img, imageX, imageY, width, height }, index) => {
+                        if (
+                            startX >= imageX &&
+                            startX <= imageX + width &&
+                            startY >= imageY &&
+                            startY <= imageY + height
+                        ) {
+                            isDragging = true;
+                            prevX = startX;
+                            prevY = startY;
+                            selectedGIFIndex = index;
+                        }
+                    });
+                });
+    
+                canvas.addEventListener('mousemove', function(e) {
+                    if (isDragging) {
+                        const newX = e.clientX - canvas.getBoundingClientRect().left;
+                        const newY = e.clientY - canvas.getBoundingClientRect().top;
+    
+                        const deltaX = newX - prevX;
+                        const deltaY = newY - prevY;
+    
+                        placedGIFs[selectedGIFIndex].imageX += deltaX;
+                        placedGIFs[selectedGIFIndex].imageY += deltaY;
+    
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        placedGIFs.forEach(({ img, imageX, imageY, width, height }) => {
+                            ctx.drawImage(img, imageX, imageY, width, height);
+                        });
+    
+                        prevX = newX;
+                        prevY = newY;
+                    }
+                });
+    
+                canvas.addEventListener('mouseup', function() {
+                    isDragging = false;
+                });
+    
+                canvas.addEventListener('mouseleave', function() {
+                    isDragging = false;
+                });
+            };
+        });
     }
+    
     
     showChristmasGIFs();
     
