@@ -158,7 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                 case 'day20':
                     content += `
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
                         <h2>Write a Letter to Your Future Self</h2>
                         <form id="storyForm">
                             <label for="name">Your Name:</label>

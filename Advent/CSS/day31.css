@@ -15,13 +15,12 @@ textarea {
     border-radius: 10px;
     color: blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic; 
-
+    font-size: medium;
     
-    background-image: linear-gradient(to bottom, transparent 3px, #e981a4 2px, lightblue 4px, transparent 4px);
+    background-image: linear-gradient(to bottom, transparent 3px,  1px, lightblue 4px, transparent 4px);
     background-size: 100% 20px;
     background-origin: content-box;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .day31-button {
