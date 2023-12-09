@@ -154,7 +154,47 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "<img src='/Advent/images/fred_swaniker.jpg' alt='Fred Swaniker' style='width: 700px; height: 400px;'>";
                     content += "<h4 style='font-size: 20px;'>“All of us who are privileged enough to be healthy, to be alive, to have education and to have influence, our role is not to do small things and to solve small problems,” Swaniker said.</h4>";
                     content += "<h4 style='font-size: 20px;'>“The only way that we can justify privilege is by solving the world's biggest problems, and by doing hard things.”</h4>";
-                    break;   
+                    break;
+                    
+                case 'day20':
+                    content += `
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+                        <h2>Write a Letter to Your Future Self</h2>
+                        <form id="storyForm">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                        
+                            <label for="challenges">A Challenging Experience:</label>
+                            <input type="text" id="challenges" name="challenges" required><br><br>
+                        
+                            <label for="lesson">Lesson Learned:</label>
+                            <textarea id="lesson" name="lesson" rows="4" cols="50" required></textarea><br><br>
+                        
+                            <label for="careerVision">Career Vision in 10 Years:</label>
+                            <textarea id="careerVision" name="careerVision" rows="4" cols="50" required></textarea><br><br>
+                        
+                            <label for="personalGoals">Personal Goals in 10 Years:</label>
+                            <textarea id="personalGoals" name="personalGoals" rows="4" cols="50" required></textarea><br><br>
+
+                            <label for="currentLocation">Current Location:</label>
+                            <input type="text" id="currentLocation" name="currentLocation" required><br><br>
+
+                            <label for="currentEmotion">Current Emotion:</label>
+                            <input type="text" id="currentEmotion" name="currentEmotion" required><br><br>
+
+                            <label for="currentAchievement">Current Achievement:</label>
+                            <input type="text" id="currentAchievement" name="currentAchievement" required><br><br>
+
+                        
+                            <label for="personalMessage">Personal Motto/Message:</label>
+                            <input type="text" id="personalMessage" name="personalMessage" required><br><br>
+                        
+                            <button type="submit">Generate Letter</button>
+                            <button id="downloadButton">Download as PDF</button>
+
+                        </form>
+                        <div id="storyOutput"></div>`;
+                    break;
                 
 
                 case 'day31':
@@ -187,6 +227,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (dayId === 'day15') {
                 loadMemoryGameLogic();
+            }
+
+            if (dayId === 'day20') {
+                futureIntrospection();
             }
             
             if (dayId === 'day31') {

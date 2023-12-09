@@ -1,0 +1,38 @@
+const storyText = `
+            Dear ${name},
+            
+            I hope this letter finds you well 😊.
+            
+            As I pen down these words, my heart swells with overwhelming emotions and gratitude that words can hardly express.
+            
+            Reflecting on 2023 and the many challenges, I'm filled with immense happiness and a sense of accomplishment as I ponder our journey.
+            
+            Those sleepless nights, battling through challenges like ${challenges}, became our strength, molding us with invaluable lessons have sculpted us into who we are today.
+            
+            Remember when we took that leap of faith with ALX-Africa? Who knew it would be a blessing in disguise? The challenges, the uncertainties, and the moments of doubt, they all led to where we stand today.
+            
+            Today, our vision of ${careerVision} is clearer than ever.
+            
+            Our journey has been a rollercoaster, shaping us for the better. Our once-distant personal goals are now within reach.
+            
+            Each experience, including ${lesson}, contributed to sculpting us into who we are today.
+            
+            The message that resonates within us, "${personalMessage}," has been our guiding compass through storms and calm seas alike.
+            
+            We navigated through obstacles, aligning ourselves perfectly with our vision of ${careerVision}.
+            
+            In envisioning ourselves 10 years from now, standing in ${currentLocation}, overwhelmed with ${currentEmotion}, we celebrate the triumphs, including ${currentAchievement}.
+            
+            Remember the resilience we've shown, the message: ${personalMessage}. It's been our beacon through tough times.
+            
+            Let's revel in our achievements, cherish the growth, and embrace the happiness that comes from our resilience and hard work.
+            
+            Here's to the future, to continued success, and the convergence of dreams and reality.
+
+            Our decision to take that leap of faith was nothing short of destiny's nudge, and I'm forever grateful for it.
+
+            With unending pride, gratitude, and anticipation for the journey ahead.
+            
+            Warm regards,
+            ${name}
+        `;

@@ -323,5 +323,3 @@ function DesignArt() {
     buttonStyles();
     
 }
-
-DesignArt();
