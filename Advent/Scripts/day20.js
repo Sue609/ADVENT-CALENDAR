@@ -13,17 +13,14 @@ function futureIntrospection() {
         const currentEmotion = document.getElementById('currentEmotion').value; // Added field for current emotion
         const currentAchievement = document.getElementById('currentAchievement').value; // Added field for current achievement
 
-        
         // Expanded personalized story using the user inputs
-        const storyText = `
-            Dear ${name},
+        const storyText = `Dear ${name},
             I hope this letter finds you well! 😊 
             As I pen down these words, my heart swells with overwhelming emotions and gratitude that words
             can hardly express. Reflecting on 2023, I'm filled with immense happiness and a sense of
             accomplishment as I ponder our journey.
-            Those sleepless nights, battling through challenges like ${challenges},
-            became our strength, molding us with invaluable lessons that have sculpted us into
-            who we are today.
+            Those sleepless nights, battling through challenges like ${challenges}, became our strength,
+            molding us with invaluable lessons that have sculpted us into who we are today.
             Remember when we took that leap of faith with ALX-Africa? Who knew it would be a blessing in
             disguise? The challenges, uncertainties, and moments of doubt led to where we stand today.
             Our vision of ${careerVision} is clearer than ever. 
@@ -66,7 +63,7 @@ function futureIntrospection() {
         const storyText = document.getElementById('storyOutput').textContent;
 
         // Split text into an array of paragraphs based on line breaks ('\n')
-        const paragraphs = storyText.split('\n');
+        let paragraphs = storyText.split('\n');
 
         // Set initial y position for text
         let yPos = 50; // Start lower to give space for title and margins
@@ -77,7 +74,7 @@ function futureIntrospection() {
 
         // Add each paragraph to the document
         paragraphs.forEach(paragraph => {
-            const textLines = doc.setFontSize(fontSize).splitTextToSize(paragraph, doc.internal.pageSize.width - 40); // Adjust the width and margins
+            let textLines = doc.setFontSize(fontSize).splitTextToSize(paragraph, doc.internal.pageSize.width - 40); // Adjust the width and margins
 
             // Check if the text fits within the page, otherwise reduce the font size
             while (doc.getTextDimensions(textLines[0]).h * textLines.length > doc.internal.pageSize.height - 40) {
@@ -101,4 +98,3 @@ function futureIntrospection() {
     // Attach click event to the download button to trigger PDF download
     downloadButton.addEventListener('click', downloadAsPDF);
 }
-
