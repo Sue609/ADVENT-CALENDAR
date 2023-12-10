@@ -167,13 +167,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             <input type="text" id="challenges" name="challenges" required><br><br>
                         
                             <label for="lesson">Lesson Learned:</label>
-                            <textarea id="lesson" name="lesson" rows="4" cols="50" required></textarea><br><br>
+                            <textarea id="lesson" name="lesson" rows="3" cols="50" required></textarea><br><br>
                         
                             <label for="careerVision">Career Vision in 10 Years:</label>
-                            <textarea id="careerVision" name="careerVision" rows="4" cols="50" required></textarea><br><br>
+                            <textarea id="careerVision" name="careerVision" rows="3" cols="50" required></textarea><br><br>
                         
                             <label for="personalGoals">Personal Goals in 10 Years:</label>
-                            <textarea id="personalGoals" name="personalGoals" rows="4" cols="50" required></textarea><br><br>
+                            <textarea id="personalGoals" name="personalGoals" rows="3" cols="50" required></textarea><br><br>
 
                             <label for="currentLocation">Current Location:</label>
                             <input type="text" id="currentLocation" name="currentLocation" required><br><br>
