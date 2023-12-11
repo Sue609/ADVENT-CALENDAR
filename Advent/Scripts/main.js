@@ -47,8 +47,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     
 
                 case 'day3':
-                    content = "<h2>Day 3 Content</h2><p>Content for Day 3</p>";
-                    content += "<img src='/Advent/images/day3.jpg' alt='Day 3 Image' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
+                    content += `
+                        <div class="puzzle-container">
+                            <h2>Daily Holiday Puzzle</h2>
+                            <div class="puzzle">
+                                <div class="puzzle-piece" id="piece1">1</div>
+                                <div class="puzzle-piece" id="piece2">2</div>
+                                <div class="puzzle-piece" id="piece3">3</div>
+                                <div class="puzzle-piece" id="piece4">4</div>
+                                <!-- Add more puzzle pieces here -->
+                            </div>
+                            <button onclick="checkSolution()">Check Solution</button>
+                            <p id="result"></p>
+                        </div>
+                        `;
                     break;
 
                 case 'day4':
@@ -249,6 +261,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             contentDisplay.innerHTML = content;
+
+            if (dayId == 'day3') {
+                holidayPuzzle()
+            }
 
             if (dayId === 'day4') {
                 DesignArt();
