@@ -29,11 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             switch (dayId) {
                 case 'day1':
-                    content = "<h2>Day 1</h2><p>How are you doing this December</p>";
-                    content += "<p style='font-size: 20px;'>🎄 Happy 1st of December! As we step into this magical month, may your days be filled with the warmth of love, the joy of giving, and the comfort of cherished moments.</p>"
-                    content += "<p style='font-size: 20px;'>Embrace the spirit of kindness and let this month be a tapestry of beautiful memories waiting to unfold. Wishing you a December full of love and laughter!🌟</p>"
-                    
-                    content += "<img src='/Advent/images/day1.jpg' alt='Day 1 Image' style='width: 400px; height: 200px;'>";
+                    content += `
+                        <div class='day1-content'>
+                            <h2>Seasons Geetings</h2>
+                            <img  class='day1-img' src='/Advent/images/day1.jpg' alt='Day 1 Image'>
+                            <p>How are you doing this December</p>
+                            <p>🎄 Happy 1st of December! As we step into this magical month, may your days be filled with the warmth of love, the joy of giving, and the comfort of cherished moments.</p>
+                            <p>Embrace the spirit of kindness and let this month be a tapestry of beautiful memories waiting to unfold. Wishing you a December full of love and laughter!🌟</p>
+                        </div>`;
                     break;
 
                 case 'day2':
