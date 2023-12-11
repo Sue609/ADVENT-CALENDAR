@@ -1,15 +1,21 @@
 .about-section {
-    /* Add styling for the entire about section */
+    display: flex;
+    /* Optional styling for the entire about section */
     /* For example: */
     padding: 20px;
     background-color: #f0f0f0;
 }
 
 .subsection {
-    /* Styling for each subsection */
+    flex: 1;
+    /* Optional styling for each subsection */
     /* For example: */
-    margin-bottom: 20px;
+    margin-right: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
+}
+
+.subsection:last-child {
+    margin-right: 0; /* Remove right margin for the last subsection */
 }
