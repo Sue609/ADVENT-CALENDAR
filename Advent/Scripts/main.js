@@ -48,6 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day3':
                     content += `
+                        <div class="fun-fact-container">
+                            <h1>Daily Fun Fact</h1>
+                            <img src='/Advent/images/night.avif' class='nightImage'>
+                            <p>
+                            Did you know that the tradition of decorating Christmas trees originated in Germany in the 16th century? It's believed that Martin Luther, the Protestant reformer, was the first to add lighted candles to a tree. He was inspired by the stars shining through the evergreen trees on a winter night and wanted to replicate the effect by placing candles on a fir tree.
+                            </p>
+                        </div>
+                
+                    `;
+                    break;
+                case 'day8':
+                    content += `
                         <div class="puzzle-container">
                             <h2>Daily Holiday Puzzle</h2>
                             <div class="puzzle">
@@ -274,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             contentDisplay.innerHTML = content;
 
-            if (dayId == 'day3') {
+            if (dayId == 'day8') {
                 holidayPuzzle()
             }
 
