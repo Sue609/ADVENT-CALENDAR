@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    font-style: initial;
     background-color: #5b8f63;
     color: #ffba00;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,7 +34,7 @@
     text-decoration: none;
     color: #ffba00;
     background-color: #135744;
-    border: 2px solid #111111;
+    border: 2px solid #ffba00;
     border-radius: 7px;
     cursor: pointer;
 }

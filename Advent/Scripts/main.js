@@ -120,18 +120,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day10':
                     content += `
-                    <h2 style='font-style: italics;'>Find Calm in Chaos: A Brief Escape</h2>
-                    <iframe width="700" height="400" src="https://www.youtube.com/embed/hlWiI4xVXKY" frameborder="0" allowfullscreen></iframe>
-                        <p style='font-size: 20px;'>Hey bestie! 😊</p>
-                        <p style='font-size: 20px;'>How are you doing? 🌟</p>
-                        <p style='font-size: 20px;'>I know how it feels – the never-ending to-do lists, the pressure to excel, and the weight of expectations. Trust me, I've been there too and still there juggling life and projects. 📚✨</p>
-                        <p style='font-size: 20px;'>It's tough, isn't it? The feeling that you should always be doing more, achieving more. But here's the thing—I understand that feeling all too well. 🤔💭</p>
-                        <p style='font-size: 20px;'>You're not alone in this. And sometimes, amidst the chaos, taking a moment seems impossible. But it's not. It's a small step, but a crucial one. 🌿🌼</p>
-                        <p style='font-size: 20px;'>So, I'm here, just like you, to remind you to take a breather. Because you matter. Your well-being matters. You're doing great, even if it doesn't always feel that way. 💖</p>
-                        <p style='font-size: 20px;'>Just 15 minutes. That's all it takes. Close your eyes, breathe, and listen to this calming instrumental. Let it be your sanctuary, your escape from the relentless pace. 🎶🌌</p>
-                        <p style='font-size: 20px;'>You're enough. More than enough. Take this moment to acknowledge your efforts, sacrifices, and time spent. They are worth it. And your future self? They'll be beaming with pride at how far you've come. 🌟✨</p>
-                        <p style='font-size: 20px;'>Don't let self-doubt cripple you and make you become your own enemy. Nip those negative thoughts in the bud. Take those 15 minutes. Relax. You're doing amazingly well, just as you are. 💪💙</p>
-                        `;
+                    <div class='day10'>
+                        <h2 style='font-style: italics;'>Find Calm in Chaos: A Brief Escape</h2>
+                        <iframe width="700" height="400" src="https://www.youtube.com/embed/hlWiI4xVXKY" frameborder="0" allowfullscreen></iframe>
+                            <p style='font-size: 20px;'>Hey bestie! 😊</p>
+                            <p style='font-size: 20px;'>How are you doing? 🌟</p>
+                            <p style='font-size: 20px;'>I know how it feels – the never-ending to-do lists, the pressure to excel, and the weight of expectations. Trust me, I've been there too and still there juggling life and projects. 📚✨</p>
+                            <p style='font-size: 20px;'>It's tough, isn't it? The feeling that you should always be doing more, achieving more. But here's the thing—I understand that feeling all too well. 🤔💭</p>
+                            <p style='font-size: 20px;'>You're not alone in this. And sometimes, amidst the chaos, taking a moment seems impossible. But it's not. It's a small step, but a crucial one. 🌿🌼</p>
+                            <p style='font-size: 20px;'>So, I'm here, just like you, to remind you to take a breather. Because you matter. Your well-being matters. You're doing great, even if it doesn't always feel that way. 💖</p>
+                            <p style='font-size: 20px;'>Just 15 minutes. That's all it takes. Close your eyes, breathe, and listen to this calming instrumental. Let it be your sanctuary, your escape from the relentless pace. 🎶🌌</p>
+                            <p style='font-size: 20px;'>You're enough. More than enough. Take this moment to acknowledge your efforts, sacrifices, and time spent. They are worth it. And your future self? They'll be beaming with pride at how far you've come. 🌟✨</p>
+                            <p style='font-size: 20px;'>Don't let self-doubt cripple you and make you become your own enemy. Nip those negative thoughts in the bud. Take those 15 minutes. Relax. You're doing amazingly well, just as you are. 💪💙</p>
+                    </div>`;
                     break;
                     
 
