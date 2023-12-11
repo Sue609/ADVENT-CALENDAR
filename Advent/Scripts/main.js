@@ -159,7 +159,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day16':
                     content += `
-                        
+                        <body>
+                            
+                            <div id='board'>
+                            <h2>Turns: <span id=tuns>0</span><h2>
+
+                            </div>
+                        </body>
                     `;
                     break;
                     
