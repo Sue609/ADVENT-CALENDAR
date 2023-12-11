@@ -1,17 +1,17 @@
 .header-container {
-    height: 70px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #5b9cca;
-    color: white;
+    background-color: #5b8f63;
+    color: #ffba00;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-container:hover {
-    background-color: rgb(145, 153, 218);
+    background-color: #669c6f;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -31,13 +31,9 @@
     padding: 10px 20px;
     margin: 10px;
     text-decoration: none;
-    color: white;
-    background-color: #9a78fa;
-    border: 3px solid #111111;
+    color: #ffba00;
+    background-color: #135744;
+    border: 2px solid #111111;
     border-radius: 7px;
     cursor: pointer;
-}
-
-.button:hoover {
-    background-color: #a95630;
 }

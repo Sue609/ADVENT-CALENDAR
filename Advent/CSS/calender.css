@@ -1,8 +1,8 @@
 .advent-calendar {
     display: flex;
     gap: 5px;
-    height: 600px;
-    background-color: #84b5ec;
+    height: 700px;
+    background-color: #7cad83;
 }
 
 .days-container {
@@ -29,59 +29,19 @@
 
 .day {
     position: relative;
-    border: 2px solid salmon;
-    width: 80px;
+    border: 3px solid #ffba00;
+    width: 90px;
     height: 90px;
     margin: 5px;
     background-size: contain;
-    background-color: #D1C7BD;
+    background-color: #145e49;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-color: black;
+    color: #ffba00;
     
 }
 
 
-#day1 {
-    background-image: url('/Advent/images/gif1.jpg');
-}
-
-#day2 {
-    background-image: url('/Advent/images/day2.png');
-
-}
-
-#day3 {
-    background-image: url('/Advent/images/day3.jpg');
-}
-
-#day4 {
-    background-image: url('/Advent/images/day4.png');
-}
-
-#day5 {
-    background-image: url('/Advent/images/day5.png');
-}
-
-#day6 {
-    background-image: url('/Advent/images/day6.jpg');
-}
-
-#day7 {
-    background-image: url('/Advent/images/day7.jpg');
-}
-
-#day8 {
-    background-image: url('/Advent/images/day8.jpg');
-}
-
-
-#day9 {
-    background-image: url('/Advent/images/day3.jpg');
-}
-
-#day31 {
-    background-image: url('/Advent/images/day31.jpg');
-}

@@ -19,11 +19,13 @@
     width: 850px;
     gap: 70px;
     padding: 60px 40px;
-    background: #fff;
+    background: white;
     border-radius: 10px;
     align-items: flex-end;
     justify-content: space-between;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 2px solid #ffba00;
+
 }
 .hangman-box img {
     user-select: none;
@@ -84,7 +86,9 @@
     font-weight: 600;
     border-radius: 4px;
     text-transform: uppercase;
-    background: #5E63BA;
+    background: #135744;
+    color: #ffba00;
+    border: 2px solid #ffba00;
 }
 .keyboard button {
     padding: 7px;
@@ -95,7 +99,7 @@
     opacity: 0.6;
 }
 :where(.game-modal, .keyboard) button:hover {
-    background: #8286c9;
+    background: #1d7e62;
 }
 .game-modal {
     position: fixed;
@@ -143,7 +147,7 @@
     font-weight: 500;
 }
 .game-modal p b {
-    color: #5E63BA;
+    color: #ffba00;
     font-weight: 600;
 }
 .game-modal button {
