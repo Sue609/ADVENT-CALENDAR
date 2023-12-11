@@ -1,14 +1,13 @@
 .about-section {
     display: flex;
-    padding: 20px;
+    padding: 70px;
+    padding-top: 120px;
     background-color: #f0f0f0;
     font-size: large;
 }
 
 .subsection {
     flex: 1;
-    /* Optional styling for each subsection */
-    /* For example: */
     margin-right: 20px;
     padding: 10px;
     border: 3px solid #ffba00;
@@ -23,19 +22,19 @@
 .about-section > .subsection:nth-child(1) {
    height: 80%;
    font-size: 20px;
-    
+   background-color: #a8d1c0;
 }
 
 .about-section > .subsection:nth-child(2) {
-    background-color: #b8f1b0;
+    background-color: #a8d1c0;
     color: #444;
-    height: 50%;
+    height: 55%;
     font-size: 20px;
 }
 
 .about-section > .subsection:nth-child(3) {
     background-color: #a8d1c0;
     color: #545553;
-    height: 70%;
+    height: 75%;
     font-size: 20px;
 }

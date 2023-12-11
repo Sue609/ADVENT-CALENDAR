@@ -2,7 +2,7 @@
     display: flex;
     gap: 5px;
     height: 700px;
-    background-color: #7cad83;
+    background-color: #2cca9d;
 }
 
 .days-container {
@@ -49,4 +49,3 @@
     background-color: #ffba00;
     color: #145e49;
 }
-

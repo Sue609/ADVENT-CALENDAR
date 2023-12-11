@@ -4,56 +4,9 @@ body {
 }
 
 
-
 .about-section {
-    background: #ffbfc5;;
     text-align: center;
     padding: 40px;
     height: 550px;
-}
-
-.snowflake {
-    position: absolute;
-    top: -10px;
-    left: calc(100% * var(--random-x)); /* Adjust X position within intro-text */
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
-    animation: snowfall var(--speed) linear infinite, spin 5s linear infinite; /* Combine snowfall and spin animation */
-    opacity: 0.8; /* Adjust snowflake opacity */
-}
-
-/* Style for red star */
-.red-star {
-    position: absolute;
-    top: -10px;
-    left: calc(100% * var(--random-x)); /* Adjust X position within intro-text */
-    width: 5px;
-    height: 5px;
-    background-color: red; /* Change color to red */
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    animation: snowfall var(--speed) linear infinite, spin 5s linear infinite; /* Combine snowfall and spin animation */
-    opacity: 0.8; /* Adjust star opacity */
-}
-
-/* Animation for snowfall */
-@keyframes snowfall {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(100vh);
-    }
-}
-
-/* Animation for spin */
-@keyframes spin {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
