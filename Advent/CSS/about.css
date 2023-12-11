@@ -21,18 +21,21 @@
 }
 
 .about-section > .subsection:nth-child(1) {
-   height: 70%;
+   height: 80%;
+   font-size: 20px;
     
 }
 
 .about-section > .subsection:nth-child(2) {
     background-color: #b8f1b0;
     color: #444;
-    height: 30%;
+    height: 50%;
+    font-size: 20px;
 }
 
 .about-section > .subsection:nth-child(3) {
     background-color: #a8d1c0;
     color: #545553;
-    height: 40%;
+    height: 70%;
+    font-size: 20px;
 }
