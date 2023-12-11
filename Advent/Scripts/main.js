@@ -156,6 +156,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += "</div>";
                     content+= "<script "            
                     break;
+
+                case 'day16':
+                    content += `
+                        
+                    `;
+                    break;
                     
 
                 case 'day17':
