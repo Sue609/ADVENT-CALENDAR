@@ -1,0 +1,13 @@
+.day2-content {
+    text-align: center;
+    background-color: lightblue;
+    padding: 30px;
+    border-radius: 5px;
+    border: 3px solid #ffba00;
+}
+
+.day2-img {
+    max-width: 500px;
+    max-height: 200px;
+    border-radius: 5px;
+}

@@ -4,17 +4,14 @@
     background-color: #dfe9f5;
     border-radius: 3px;
     border: 3px solid #ffba00;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .day1-img {
     max-width: 80%px;
-    max-height: 400px;
+    max-height: 300px;
     border-radius: 5px;
 
 }
 
-.greeting,
-.wishes {
-    font-size: 20px;
-
-}

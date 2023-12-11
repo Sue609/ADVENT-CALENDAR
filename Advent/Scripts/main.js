@@ -33,19 +33,29 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class='day1-content'>
                             <h2>Seasons Geetings</h2>
                             <img  class='day1-img' src='/Advent/images/day1.jpg' alt='Day 1 Image'>
-                            <p>How are you doing this December</p>
-                            <p>🎄 Happy 1st of December! As we step into this magical month, may your days be filled with the warmth of love, the joy of giving, and the comfort of cherished moments.</p>
-                            <p>Embrace the spirit of kindness and let this month be a tapestry of beautiful memories waiting to unfold. Wishing you a December full of love and laughter!🌟</p>
+                            <p style='font-size: 18px;'>How are you doing this December</p>
+                            <p style='font-size: 18px;'>🎄 Happy 1st of December! As we step into this magical month, may your days be filled with the warmth of love, the joy of giving, and the comfort of cherished moments.</p>
+                            <p style='font-size: 18px;'>Embrace the spirit of kindness and let this month be a tapestry of beautiful memories waiting to unfold. Wishing you a December full of love and laughter!🌟</p>
                         </div>`;
                     break;
 
                 case 'day2':
-                    content = "<h2>Day 2 Content</h2>";
-                    content += "<p style='font-size: 20px;'>In the journey of pursuing greatness, challenges pave the path to triumph. 🛤️ Embrace the difficulties, for within them lie the seeds of growth and achievement. 🌱 Every obstacle is an opportunity to learn, to innovate, and to surpass limitations. 💡</p>";
-                    content += "<p style='font-size: 20px;'>Remember, the road to success often winds through the terrain of hard work, perseverance, and resilience. As you embark on this path, know that each hurdle overcome is a testament to your strength and determination. 🏋️‍♂️ Believe in your capacity to #DoHardThings, for it's in these challenges that your true potential thrives. 💪</p>";
-                    content += "<p style='font-size: 20px;'>Your perseverance today will sculpt the success stories of tomorrow. 📖 Keep pushing forward; greatness awaits! 🚀</p>";
-                    content += "<img src='/Advent/images/day2.png' alt='Day 2 Image' style='width: 400px; height: 200px;'>";
-                    content += "<h3>#DoHardThings</h3>";
+                    content += `
+                        <div class='day2-content'>
+                            <h2>Beauty of Hardwork</h2>
+                            <img class='day2-img' src='/Advent/images/day2.png' alt='Day 2 Image'>
+                            <p style='font-size: 18px;'>In the journey of pursuing greatness, challenges pave the path to triumph.
+                                🛤️ Embrace the difficulties, for within them lie the seeds of growth and achievement.
+                                🌱 Every obstacle is an opportunity to learn, to innovate, and to surpass limitations. 💡
+                            </p>
+                            <p style='font-size: 18px;'>Remember, the road to success often winds through the terrain of hard work, perseverance, and resilience. As you embark on this path, know that each hurdle overcome is a testament to your strength and determination. 
+                                🏋️‍♂️ Believe in your capacity to #DoHardThings, for it's in these challenges that your true potential thrives. 💪</p>
+                            <p style='font-size: 18px;'>Your perseverance today will sculpt the success stories of tomorrow. 
+                                📖 Keep pushing forward; greatness awaits! 🚀
+                            </p>
+                            <h3>#DoHardThings</h3>
+                        </div>
+                    `;
                     break;
                     
 
@@ -149,16 +159,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     content += `
                     <div class='day10'>
                         <h2 style='font-style: italics;'>Find Calm in Chaos: A Brief Escape</h2>
-                        <iframe width="700" height="400" src="https://www.youtube.com/embed/hlWiI4xVXKY" frameborder="0" allowfullscreen></iframe>
-                            <p style='font-size: 20px;'>Hey bestie! 😊</p>
-                            <p style='font-size: 20px;'>How are you doing? 🌟</p>
-                            <p style='font-size: 20px;'>I know how it feels – the never-ending to-do lists, the pressure to excel, and the weight of expectations. Trust me, I've been there too and still there juggling life and projects. 📚✨</p>
-                            <p style='font-size: 20px;'>It's tough, isn't it? The feeling that you should always be doing more, achieving more. But here's the thing—I understand that feeling all too well. 🤔💭</p>
-                            <p style='font-size: 20px;'>You're not alone in this. And sometimes, amidst the chaos, taking a moment seems impossible. But it's not. It's a small step, but a crucial one. 🌿🌼</p>
-                            <p style='font-size: 20px;'>So, I'm here, just like you, to remind you to take a breather. Because you matter. Your well-being matters. You're doing great, even if it doesn't always feel that way. 💖</p>
-                            <p style='font-size: 20px;'>Just 15 minutes. That's all it takes. Close your eyes, breathe, and listen to this calming instrumental. Let it be your sanctuary, your escape from the relentless pace. 🎶🌌</p>
-                            <p style='font-size: 20px;'>You're enough. More than enough. Take this moment to acknowledge your efforts, sacrifices, and time spent. They are worth it. And your future self? They'll be beaming with pride at how far you've come. 🌟✨</p>
-                            <p style='font-size: 20px;'>Don't let self-doubt cripple you and make you become your own enemy. Nip those negative thoughts in the bud. Take those 15 minutes. Relax. You're doing amazingly well, just as you are. 💪💙</p>
+                        <iframe width="600" height="300" src="https://www.youtube.com/embed/hlWiI4xVXKY" frameborder="0" allowfullscreen></iframe>
+                            <p style='font-size: 18px;'>Hey bestie! 😊</p>
+                            <p style='font-size: 18px;'>How are you doing? 🌟</p>
+                            <p style='font-size: 18px;'>I know how it feels – the never-ending to-do lists, the pressure to excel, and the weight of expectations. Trust me, I've been there too and still there juggling life and projects. 📚✨</p>
+                            <p style='font-size: 18px;'>It's tough, isn't it? The feeling that you should always be doing more, achieving more. But here's the thing—I understand that feeling all too well. 🤔💭</p>
+                            <p style='font-size: 18px;'>You're not alone in this. And sometimes, amidst the chaos, taking a moment seems impossible. But it's not. It's a small step, but a crucial one. 🌿🌼</p>
+                            <p style='font-size: 18px;'>So, I'm here, just like you, to remind you to take a breather. Because you matter. Your well-being matters. You're doing great, even if it doesn't always feel that way. 💖</p>
+                            <p style='font-size: 18px;'>Just 15 minutes. That's all it takes. Close your eyes, breathe, and listen to this calming instrumental. Let it be your sanctuary, your escape from the relentless pace. 🎶🌌</p>
+                            <p style='font-size: 18px;'>You're enough. More than enough. Take this moment to acknowledge your efforts, sacrifices, and time spent. They are worth it. And your future self? They'll be beaming with pride at how far you've come. 🌟✨</p>
+                            <p style='font-size: 18px;'>Don't let self-doubt cripple you and make you become your own enemy. Nip those negative thoughts in the bud. Take those 15 minutes. Relax. You're doing amazingly well, just as you are. 💪💙</p>
                     </div>`;
                     break;
                     
