@@ -1,9 +1,8 @@
 .about-section {
     display: flex;
-    /* Optional styling for the entire about section */
-    /* For example: */
     padding: 20px;
     background-color: #f0f0f0;
+    font-size: large;
 }
 
 .subsection {
@@ -12,10 +11,28 @@
     /* For example: */
     margin-right: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 3px solid #ffba00;
+    background-color: white;
 }
 
 .subsection:last-child {
-    margin-right: 0; /* Remove right margin for the last subsection */
+    margin-right: 0;
+
+}
+
+.about-section > .subsection:nth-child(1) {
+   height: 70%;
+    
+}
+
+.about-section > .subsection:nth-child(2) {
+    background-color: #b8f1b0;
+    color: #444;
+    height: 30%;
+}
+
+.about-section > .subsection:nth-child(3) {
+    background-color: #a8d1c0;
+    color: #545553;
+    height: 40%;
 }
