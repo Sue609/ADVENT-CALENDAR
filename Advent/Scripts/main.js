@@ -195,7 +195,40 @@ document.addEventListener('DOMContentLoaded', function() {
                         </form>
                         <div id="storyOutput"></div>`;
                     break;
-                
+
+                case 'day24':
+                    content += `
+                    <div class='recipe-container'>
+                        <div class='recipe-intro'>
+                            <p>Unlock the joy of togetherness and create cherished moments with your loved ones this holiday season.
+                            Treat your family to a delightful morning by whipping up these fluffy, homemade pancakes.</p>
+                            <img class='pancakes' src='/Advent/images/pancakes.jpg'>
+                        </div>
+                        <div class="recipe-card">
+                            <h2>Pancake Recipe</h2>
+                            <ul>
+                                <li>1 cup all-purpose flour</li>
+                                <li>1 tablespoon granulated sugar</li>
+                                <li>1 teaspoon baking powder</li>
+                                <li>1/2 teaspoon baking soda</li>
+                                <li>1/4 teaspoon salt</li>
+                                <li>1 cup buttermilk</li>
+                                <li>1 large egg</li>
+                                <li>2 tablespoons unsalted butter, melted</li>
+                                <li>Butter or oil for cooking</li>
+                            </ul>
+                            <h3>Instructions:</h3>
+                            <ol>
+                                <li>In a mixing bowl, whisk together the flour, sugar, baking powder, baking soda, and salt.</li>
+                                <li>In another bowl, whisk together the buttermilk, egg, and melted butter.</li>
+                                <li>Pour the wet ingredients into the dry ingredients and gently mix until just combined. Don't overmix; a few lumps are okay.</li>
+                                <li>Heat a skillet or griddle over medium heat and lightly grease with butter or oil.</li>
+                                <li>Pour about 1/4 cup of batter onto the skillet for each pancake. Cook until bubbles form on the surface, then flip and cook until golden brown on both sides.</li>
+                                <li>Serve warm with your favorite toppings such as maple syrup, fresh fruits, or whipped cream.</li>
+                            </ol>
+                        </div>
+                    </div>`;
+                    break;                
 
                 case 'day31':
                     content = "<h2>Set Your 2024 Goals</h2>";
