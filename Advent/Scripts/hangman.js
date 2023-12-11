@@ -126,7 +126,7 @@ const wordList = [
     },
 
     {
-        word: "alx_ai",
+        word: "alxai",
         hint: "What is the popular hashtag for the latest unique and visionary initiative meticulously designed by Kalkidan Betre and Julien Barbier that is available for ALX graduates"
     },
     
@@ -136,7 +136,7 @@ const wordList = [
     },
 
     {
-        word: "Irene",
+        word: "irene",
         hint: "The Community whisperer Your #1 Cheerleader through your learning journey",
     },
 
