@@ -159,8 +159,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day16':
                     content += `
-                        <body>
-                            
+                        <body class='body'>
+                            <img id='title' src='/Advent/images/christmasPuzzle/puzzle.webp'>
                             <div id='board'>
                             <h2>Turns: <span id=tuns>0</span><h2>
 
