@@ -4,6 +4,18 @@ body {
 }
 
 
+.calendar-section {
+    text-align: center;
+    padding: 3px;
+    height: 700px;
+    border-radius: 2px;
+    border-left: 3px solid #ffba00;
+    border-right: 3px solid #ffba00;
+    background-color: #2cca9d;
+
+}
+
+
 .about-section {
     text-align: center;
     padding: 40px;
