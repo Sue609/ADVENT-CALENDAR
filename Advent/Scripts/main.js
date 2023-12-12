@@ -154,6 +154,44 @@ document.addEventListener('DOMContentLoaded', function() {
                     </body>`;
                     break;
 
+                case 'day6':
+                    content += `
+                            <h1>ALX Africa Courage Storytelling</h1>
+                            <p>Share your story of courage with the community!</p>
+                            <section id="purpose">
+                                <h2>Purpose of the Activity</h2>
+                                <p style='font-size: 18px;'>The Courage Storytelling activity aims to celebrate and acknowledge the diverse experiences of courage within our community.
+                                    We believe that sharing personal stories of courage can inspire and support others, fostering a sense of connection and strength.
+                                    Through this it could even align you with your potential employers and even make friends. The journey of software engineering is a lonely one
+                                    but it does not have to be share your story and meet peers who align with your experiences.</p>
+                            </section>
+
+                            <section id="instructions">
+                                <h2>Instructions</h2>
+                                <p style='font-size: 18px;'>To participate, write your story of courage in the provided textarea below and click the 'Submit' button.
+                                    It could be as simple as a leep of faith, a personal experience, a lesson learned, or an inspiring moment that showcases courage.</p>
+                                </section>
+
+                                <form id="storyForm">
+                                <label for="story">Share Your Story:</label>
+                                <textarea id="story" rows="8" placeholder="Write your story here..."></textarea>
+                                <button type="submit">Submit</button>
+                                <div id="submissionMessage" style="display: none;"></div>
+                                </form>
+
+                                <section id="thoughts">
+                                <h2>Share Your Thoughts</h2>
+                                <p style='font-size: 18px;'>We encourage you to reflect on the stories shared by others and engage in respectful discussions.
+                                    Your thoughts and comments can provide support and encouragement to fellow community members.
+                                    Kindly make the stories not more than 300 words. Thank you for your participations.
+                                    
+                                    </p>
+                            </section>
+
+                            <div id="storyContainer"></div>
+                        `
+                    break;
+
 
                 case 'day10':
                     content += `
@@ -309,6 +347,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (dayId === 'day5') {
                 hangmanGame();
+            }
+
+            if (dayId == 'day6') {
+                courageStories();
             }
 
             if (dayId === 'day15') {
