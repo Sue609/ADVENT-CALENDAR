@@ -247,6 +247,32 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p style='font-size: 18px;'>Don't let self-doubt cripple you and make you become your own enemy. Nip those negative thoughts in the bud. Take those 15 minutes. Relax. You're doing amazingly well, just as you are. 💪💙</p>
                     </div>`;
                     break;
+
+                case 'day11':
+                    content += 
+                    `
+                    <div class="recipe-container">
+                        <h2>Did You Know? 🤔</h2>
+                        <img src='/Advent/images/rudolph.webp' style='width: 500px; height: 300px;'>
+                        <p style='font-size: 16px;'>"Rudolph the Red-Nosed Reindeer" was created by a department store chain, Montgomery Ward,
+                        in 1939. Robert L. May, an advertising copywriter for the store, wrote the story as a 
+                        promotional booklet distributed to children during the holiday season. It later became a b
+                        eloved Christmas song and a classic character associated with Santa's reindeer team.</p>
+                    </div>
+                    `;
+                    break;
+
+                case 'day14':
+                    content += `
+                        <div class="recipe-container">
+                            <h2>Did You Know? 🤔</h2>
+                            <p style='font-size: 16px;'>During World War I, a temporary truce occurred on Christmas Day in 1914.
+                            Soldiers from both sides laid down their arms, sang carols, exchanged gifts,
+                            and even played football (soccer) together in what is known as the 'Christmas Truce.'
+                            This brief moment of peace amidst conflict showed the human spirit's capacity for compassion
+                            and goodwill even in challenging times.</p>
+                        </div>`;
+                    break;
                     
 
                 case 'day15':
@@ -460,6 +486,21 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div id="storyOutput"></div>`;
                     break;
 
+                case 'day22':
+                    content += `
+                        <div class="recipe-container">
+                            <p id="question">What is the traditional Christmas plant?</p>
+                            <ul id="answers">
+                                <li><button onclick="checkAnswer(this)">Mistletoe</button></li>
+                                <li><button onclick="checkAnswer(this)">Sunflower</button></li>
+                                <li><button onclick="checkAnswer(this)">Poinsettia</button></li>
+                                <li><button onclick="checkAnswer(this)">Tulip</button></li>
+                            </ul>
+                            <p id="result"></p>
+                            <button onclick="nextQuestion()">Next Question</button>
+                        </div>`;
+                    break;
+
                 case 'day24':
                     content += `
                     <div class='recipe-container'>
@@ -564,12 +605,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 memoryGame();
             }
 
-            if (dayId === 'day15') {
-                loadMemoryGameLogic();
-            }
 
             if (dayId === 'day20') {
                 futureIntrospection();
+            }
+
+            if (dayId === 'day22') {
+                display
+                christmasChallenge();
             }
             
             if (dayId === 'day31') {
