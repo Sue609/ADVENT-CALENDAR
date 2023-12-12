@@ -200,7 +200,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p>Indulge in the delightful taste of homemade chocolate chip cookies.
                                 This classic recipe is perfect for creating delicious treats to savor during the festive season.
                                 Follow the steps below to bake your batch of scrumptious cookies!
-                            </p
+                            </p>
+
+                            <img class='cookies' src='/Advent/images/chocolateChip.jpg'>
 
                             <h2>Ingredients:</h2>
                             <ul>
@@ -506,10 +508,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             contentDisplay.innerHTML = content;
-
-            if (dayId == 'day8') {
-                holidayPuzzle()
-            }
 
             if (dayId === 'day4') {
                 DesignArt();
