@@ -406,14 +406,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     
 
                 case 'day17':
-                    content = "<h2>Day 17: Celebrating Leadership with Fred Swaniker</h2>";
-                    content += "<p style='font-size: 20px;'>🎉 Today, I dedicate this day to Fred Swaniker, CEO of ALX.</p>";
-                    content += "<p style='font-size: 20px;'>His vision transformed not just my life but countless others through ALX's educational opportunities.</p>";
-                    content += "<p style='font-size: 20px;'>Thanks to his leadership, I received a scholarship that changed the trajectory of my future. 🌟 His commitment to nurturing young leaders like me has empowered graduates worldwide, fostering a community of change-makers.</p>";
-                    content += "<p style='font-size: 20px;'>🌍 Here's to Fred Swaniker's guidance and ALX's ethos of leadership, learning, and impact. #FredSwaniker #ALXImpact 🚀</p>";
-                    content += "<img src='/Advent/images/fred_swaniker.jpg' alt='Fred Swaniker' style='width: 700px; height: 400px;'>";
-                    content += "<h4 style='font-size: 20px;'>“All of us who are privileged enough to be healthy, to be alive, to have education and to have influence, our role is not to do small things and to solve small problems,” Swaniker said.</h4>";
-                    content += "<h4 style='font-size: 20px;'>“The only way that we can justify privilege is by solving the world's biggest problems, and by doing hard things.”</h4>";
+                    content = `
+                        <div class='recipe-container'>
+                            <h2>Celebrating Leadership with Fred Swaniker</h2>
+                            <img src='/Advent/images/fred_swaniker.jpg' alt='Fred Swaniker' style='width: 700px; height: 300px;'>
+                            <p style='font-size: 16px;'>🎉 Today, I dedicate this day to Fred Swaniker, CEO of ALX.</p>
+                            <p style='font-size: 16px;'>His vision transformed not just my life but countless others through ALX's educational opportunities.</p>
+                            <p style='font-size: 16px;'>Thanks to his leadership, I received a scholarship that changed the trajectory of my future. 
+                            🌟 His commitment to nurturing young leaders like me has empowered graduates worldwide, fostering a community of change-makers.</p>
+                            <p style='font-size: 16px;'>🌍 Here's to Fred Swaniker's guidance and ALX's ethos of leadership, learning, and impact. #FredSwaniker #ALXImpact 🚀</p>
+                            <h4 style='font-size: 16px;'>“All of us who are privileged enough to be healthy, to be alive, to have education and to have influence,
+                                our role is not to do small things and to solve small problems,” Swaniker said.</h4>
+                            <h4 style='font-size: 16px;'>“The only way that we can justify privilege is by solving the world's biggest problems, and by doing hard things.”</h4>
+                        </div>`
                     break;
                     
                 case 'day20':
@@ -487,7 +492,27 @@ document.addEventListener('DOMContentLoaded', function() {
                             </ol>
                         </div>
                     </div>`;
-                    break;                
+                    break;
+                    
+                case 'day27':
+                    content += `
+                    <div class="recipe-container">
+                        <h1>Encouraging Giving During the Festive Season</h1>
+                        <p>During this festive season, let's remember that kindness knows no boundaries.
+                            While it's essential to support the less fortunate, let's also extend our
+                            generosity to those who may not outwardly express their need. Sometimes,
+                            a small act of kindness towards someone who might not ask for help can have
+                            a profound impact. Reach out to neighbors, friends, or acquaintances who might
+                            benefit from a caring gesture. Your generosity might brighten their holiday season
+                            more than you could ever imagine.</p>
+                            <h3>"Generosity is not about the size of the act but the intention behind it.
+                            A simple gesture of kindness, whether big or small, has the power to create 
+                            ripples of positive change in the world. Embrace the joy of giving without 
+                            expecting anything in return, for it's in the act of selflessness that we find 
+                            true fulfillment and make a meaningful difference in others' lives."</h3>
+
+                    </div>`;
+                    break;
 
                 case 'day31':
                     content = "<h2>Set Your 2024 Goals</h2>";
