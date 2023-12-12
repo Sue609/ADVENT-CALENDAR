@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <ul class="cards">
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="/Advent/images/MemoryImages/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-1.png" alt="card-img">
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-6.png" alt="card-img">
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-3.png" alt="card-img">
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-2.png" alt="card-img">
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-1.png" alt="card-img">
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-5.png" alt="card-img">
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-2.png" alt="card-img">
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-6.png" alt="card-img">
@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-3.png" alt="card-img">
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-5.png" alt="card-img">
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </li>
                                     <li class="card">
                                         <div class="view front-view">
-                                            <img src="images/que_icon.svg" alt="icon">
+                                            <img src="/Advent/images/MemoryImages/question.png" alt="icon">
                                         </div>
                                         <div class="view back-view">
                                             <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">

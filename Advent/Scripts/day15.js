@@ -49,7 +49,7 @@ function memoryGame() {
         cards.forEach((card, i) => {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back-view img");
-            imgTag.src = `images/img-${arr[i]}.png`;
+            imgTag.src = `/Advent/images/MemoryImages/img-${arr[i]}.png`;
             card.addEventListener("click", flipCard);
         });
     }

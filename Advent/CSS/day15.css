@@ -17,21 +17,25 @@
 .wrapper{
     padding: 25px;
     border-radius: 10px;
-    background: #F8F8F8;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  }
-  .cards, .card, .view{
+    background: lightblue;
+    border: 1px solid #f8d77b;
+}
+  
+.cards, .card, .view{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .cards{
-    height: 400px;
-    width: 400px;
+    border: 1px solid #ffba00;
+}
+  
+.cards{
+    height: 430px;
+    width: 430px;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .cards .card{
+}
+  
+.cards .card{
     cursor: pointer;
     list-style: none;
     user-select: none;
@@ -40,8 +44,9 @@
     transform-style: preserve-3d;
     height: calc(100% / 4 - 10px);
     width: calc(100% / 4 - 10px);
-  }
-  .card.shake{
+}
+  
+.card.shake{
     animation: shake 0.35s ease-in-out;
   }
   @keyframes shake {
@@ -60,8 +65,9 @@
     80%{
       transform: translateX(8px);
     }
-  }
-  .card .view{
+}
+  
+.card .view{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -69,25 +75,30 @@
     background: #fff;
     pointer-events: none;
     backface-visibility: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.25s linear;
+}
+  
+.card .front-view img{
+    width: 30px;
+}
+  
+.card .back-view img{
+    max-width: 100%;
   }
-  .card .front-view img{
-    width: 19px;
-  }
-  .card .back-view img{
-    max-width: 45px;
-  }
-  .card .back-view{
+ 
+.card .back-view{
     transform: rotateY(-180deg);
-  }
-  .card.flip .back-view{
+}
+  
+.card.flip .back-view{
     transform: rotateY(0);
-  }
-  .card.flip .front-view{
+}
+  
+.card.flip .front-view{
     transform: rotateY(180deg);
-  }
-  @media screen and (max-width: 700px) {
+}
+  
+@media screen and (max-width: 700px) {
     .cards{
       height: 350px;
       width: 350px;
@@ -98,8 +109,9 @@
     .card .back-view img{
       max-width: 40px;
     }
-  }
-  @media screen and (max-width: 530px) {
+}
+  
+@media screen and (max-width: 530px) {
     .cards{
       height: 300px;
       width: 300px;
@@ -110,4 +122,4 @@
     .card .back-view img{
       max-width: 35px;
     }
-  }
+}
