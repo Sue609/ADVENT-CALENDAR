@@ -3,6 +3,7 @@ function memoryGame() {
     let matched = 0;
     let cardOne, cardTwo;
     let disableDeck = false;
+    
     function flipCard({target: clickedCard}) {
         if(cardOne !== clickedCard && !disableDeck) {
             clickedCard.classList.add("flip");

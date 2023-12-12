@@ -213,6 +213,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day15':
                     content += `
+                        <h2>Christmas Memory Card Game</h2>
+                        <p style='font-size: 18px;'>Click on cards to reveal images.</p>
+                        <p style='font-size: 18px;'>Match pairs to clear the board.</p>
+                        <p style='font-size: 18px;'>Complete the game by finding all matches.</p>
                         <div class='day15-container'>
                             <div class="wrapper">
                                 <ul class="cards">
