@@ -188,10 +188,46 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </p>
                             </section>
 
-                            <div id="storyContainer"></div>
-                        `
+                            <div id="storyContainer"></div>`
                     break;
 
+                case 'day7':
+                        content += 
+                        
+                        `<div class='recipe-container'>
+                            <h1>Chocolate Chip Cookies Recipe</h1>
+
+                            <p>Indulge in the delightful taste of homemade chocolate chip cookies.
+                                This classic recipe is perfect for creating delicious treats to savor during the festive season.
+                                Follow the steps below to bake your batch of scrumptious cookies!
+                            </p
+
+                            <h2>Ingredients:</h2>
+                            <ul>
+                                <li>1 cup (2 sticks) unsalted butter, softened</li>
+                                <li>3/4 cup granulated sugar</li>
+                                <li>3/4 cup packed brown sugar</li>
+                                <li>2 large eggs</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>2 1/4 cups all-purpose flour</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>1/2 teaspoon salt</li>
+                                <li>2 cups semi-sweet chocolate chips</li>
+                            </ul>
+                            
+                            <h2>Instructions:</h2>
+                            <ol>
+                                <li><strong>Preheat Oven:</strong> Preheat your oven to 350°F (175°C). Line baking sheets with parchment paper or lightly grease them.</li>
+                                <li><strong>Cream Butter and Sugars:</strong> In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar until light and fluffy.</li>
+                                <li><strong>Add Eggs and Vanilla:</strong> Beat in the eggs, one at a time, until well combined. Stir in the vanilla extract.</li>
+                                <li><strong>Combine Dry Ingredients:</strong> In a separate bowl, whisk together the all-purpose flour, baking soda, and salt.</li>
+                                <li><strong>Mix Wet and Dry Ingredients:</strong> Gradually add the dry ingredients to the wet ingredients, mixing until just combined. Be careful not to overmix. Fold in the chocolate chips.</li>
+                                <li><strong>Form Cookies:</strong> Drop rounded tablespoons of dough onto the prepared baking sheets, leaving space between each cookie.</li>
+                                <li><strong>Bake:</strong> Place the baking sheets in the preheated oven and bake for 10-12 minutes, or until the edges are lightly golden.</li>
+                                <li><strong>Cool and Store:</strong> Remove the cookies from the oven and let them cool on the baking sheets for a few minutes before transferring them to a wire rack to cool completely. Store in an airtight container.</li>
+                            </ol>
+                        </div>`;
+                    break;
 
                 case 'day10':
                     content += `

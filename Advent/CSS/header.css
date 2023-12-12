@@ -1,9 +1,9 @@
 .header-container {
-    height: 30px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     font-style: initial;
     background-color: #5b8f63;
     color: #ffba00;

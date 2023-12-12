@@ -1,6 +1,5 @@
-/* Styling for recipe container */
 .recipe-container {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;
@@ -8,7 +7,7 @@
     box-shadow: 0 0 10px #ffba00;
 }
 
-/* Styling for recipe intro */
+
 .recipe-intro {
     text-align: center;
     margin-bottom: 20px;
@@ -29,7 +28,7 @@
     margin-top: 20px;
 }
 
-/* Styling for recipe card */
+
 .recipe-card {
     background-color: #fff;
     padding: 20px;
