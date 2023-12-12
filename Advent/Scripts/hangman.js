@@ -69,43 +69,27 @@ function hangmanGame () {
     getRandomWord();
     playAgainBtn.addEventListener("click", getRandomWord);
 
-    let timer;
-    let timeRemaining = 100; // Total time in seconds (adjust as needed)
-
-    const startTimer = () => {
-        timer = setInterval(() => {
-            timeRemaining--;
-            document.querySelector('.timer').innerText = `Time: ${timeRemaining} seconds`;
-
-            if (timeRemaining <= 0) {
-                clearInterval(timer);
-                // Add code to handle when the time is up (game over or other action)
-                gameOver(false); // For example, end the game when the time runs out
-            }
-        }, 1000); // Update the timer every second (1000 milliseconds)
-    };
-
-    const resetTimer = () => {
-        clearInterval(timer);
-        timeRemaining = 0; // Reset the time
-        startTimer(); // Start the timer again
-    };
-
-    // Add the startTimer function call when starting the game
-    getRandomWord();
-    startTimer(); // Start the timer when the game begins
-
-    // Reset the timer when resetting the game
-    playAgainBtn.addEventListener("click", () => {
-        getRandomWord();
-        resetTimer(); // Reset the timer when starting a new game
-    });
 
 }
 
 
 
 const wordList = [
+    {
+        word: "angel",
+        hint: "Tops many Christmas trees as a decoration."
+    },
+
+    {
+        word: "jolly",
+        hint: "A synonym for 'merry' or 'cheerful."
+    },
+
+    {
+        word: "wishes",
+        hint: "Often accompanied by hopes for joy and peace."
+    },
+    
     {
         word: "swaniker",
         hint: "The founder of ALX Africa. But do you know his second name "
@@ -120,6 +104,25 @@ const wordList = [
         hint: "During this festive season, it's a time of giving, joy, and merriment celebrated worldwide with decorations, gifts, and gatherings."
     },
 
+    {
+        word: "reindeer",
+        hint: "They pull Santa's sleigh on Christmas Eve."
+    },
+
+    {
+        word: "stocking",
+        hint: "Hung by the fireplace to be filled with small gifts."
+    },
+
+    {
+        word: "christmastree",
+        hint: "Traditionally topped with a star or an angel."
+    },
+
+    {
+        word: "caroling",
+        hint: "Singing Christmas songs door-to-door."
+    },
     {
         word: "mastercard",
         hint: "Financial empowerment partner supporting ALX's mission to cultivate leadership and innovation through access to resources and opportunities.."

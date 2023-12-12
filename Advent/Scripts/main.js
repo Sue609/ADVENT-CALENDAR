@@ -493,7 +493,21 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>`;
                     break;
-                    
+
+                case 'day25':
+                    content += `
+                        <div class="greeting">
+                            <h1>Calming Christmas Wishes</h1>
+                        </div>
+                        <div class="message">
+                            <p>Merry Christmas</p>
+                            <p>As the holiday season wraps us in its warmth and love, may the peace and serenity of Christmas fill your heart and home.</p>
+                            <p>Here's a soothing Christmas carol to accompany your moments of reflection and joy:</p>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AkgthWPHnrM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    `;
+                    break;
                 case 'day27':
                     content += `
                     <div class="recipe-container">
