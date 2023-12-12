@@ -213,21 +213,142 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day15':
                     content += `
-                        <div class='memory'>
-                          <ul class='Mcards'>
-                            <li clas='Mcard'>
-                               <div class='view front-view'>
-                                    <span class='material-icons'>question_mark</span>
-                               </div>
-                               <div class='view back-view'>
-                                
-                               </div>
-
-                            </li>
-                          <ul>  
+                        <div class='day15-container'>
+                            <div class="wrapper">
+                                <ul class="cards">
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="/Advent/images/MemoryImages/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-1.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-6.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-3.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-2.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-1.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-5.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-2.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-6.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-3.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-5.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="view front-view">
+                                            <img src="images/que_icon.svg" alt="icon">
+                                        </div>
+                                        <div class="view back-view">
+                                            <img src="/Advent/images/MemoryImages/img-4.png" alt="card-img">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    `;      
-                    break;
+                        `;      
+                        break;
 
                 case 'day16':
                     content += `
@@ -360,6 +481,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (dayId == 'day6') {
                 courageStories();
+            }
+
+            if (dayId == 'day15') {
+                memoryGame();
             }
 
             if (dayId === 'day15') {
