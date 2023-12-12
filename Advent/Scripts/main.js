@@ -212,12 +212,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     
 
                 case 'day15':
-                    content = "<h2>Ready to play a Memory Game!</h2>";
-                    content += "<div class='memory-game'>";
-                    content += "<div class='cards' id='cards'></div>";
-                    content += "<div class='result' id='result'></div>";
-                    content += "</div>";
-                    content+= "<script "            
+                    content += `
+                        <div class='memory'>
+                          <ul class='Mcards'>
+                            <li clas='Mcard'>
+                               <div class='view front-view'>
+                                    <span class='material-icons'>question_mark</span>
+                               </div>
+                               <div class='view back-view'>
+                                
+                               </div>
+
+                            </li>
+                          <ul>  
+                        </div>
+                    `;      
                     break;
 
                 case 'day16':
