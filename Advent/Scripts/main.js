@@ -524,6 +524,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         </table>
                         `;
                         break;
+
+                case 'day19':
+                    content += `
+                        <div class='recipe-container'>
+                            <p>Various studies in the fields of psychology and education highlight the role of
+                            education in developing critical thinking skills, problem-solving abilities, and fostering curiosity. 
+                            Research often discusses how education shapes cognitive development 
+                            and contributes to a person's overall mental abilities.</p>
+                        </div>
+                    `;
+                    break;
                     
                 case 'day20':
                     content += `
@@ -646,6 +657,18 @@ document.addEventListener('DOMContentLoaded', function() {
                             true fulfillment and make a meaningful difference in others' lives."</h3>
 
                     </div>`;
+                    break;
+
+                case 'day28':
+                    content += `
+                        <div class='recipe-container'>
+                            <h2>Did you know?</h2>
+                            <img src='/Advent/images/thinking.png' style='width: 700px; height: 400px;'>
+                            <p>Did you know that studies show writing down your goals increases the likelihood of
+                            achieving them by 42%? Setting pen to paper activates your brain's reticular activating system,
+                            prompting it to recognize opportunities that align with your goals.</p>                        
+                        </div>
+                    `;
                     break;
 
                 case 'day29':
