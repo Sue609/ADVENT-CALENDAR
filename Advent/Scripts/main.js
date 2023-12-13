@@ -277,6 +277,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     `;
                     break;
 
+                case 'day12':
+                    content += `
+                        <div class='recipe-container'>
+                            <h2>Movie gallery</h2>
+                            <p>Some of my top favourite holiday movies.</p>
+                            <p>Which of these are your favourite? 😊</p>
+                            <img src='/Advent/images/movies.png' style='width: 700px; height: 600px;'>                        
+                        </div>
+                        `;
+                    break;
+
                 case 'day13':
                     content += `
                         <div class='recipe-container'>
