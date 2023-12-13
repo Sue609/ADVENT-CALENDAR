@@ -1,0 +1,14 @@
+
+    .buttons {
+        background-color: #135744;
+        border: none;
+        color: #ffba00;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 8px;
+    }
+

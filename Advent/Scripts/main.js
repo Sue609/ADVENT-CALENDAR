@@ -489,15 +489,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'day22':
                     content += `
                         <div class="recipe-container">
+                            <p class="buttons">Quick fire quiz!</p>
                             <p id="question">What is the traditional Christmas plant?</p>
                             <ul id="answers">
-                                <li><button onclick="checkAnswer(this)">Mistletoe</button></li>
+                                <li><button onclick="checkAnswer(this)" >Mistletoe</button></li>
                                 <li><button onclick="checkAnswer(this)">Sunflower</button></li>
                                 <li><button onclick="checkAnswer(this)">Poinsettia</button></li>
                                 <li><button onclick="checkAnswer(this)">Tulip</button></li>
                             </ul>
                             <p id="result"></p>
-                            <button onclick="nextQuestion()">Next Question</button>
+                            <button onclick="nextQuestion()" class='buttons'>Next Question</button>
                         </div>`;
                     break;
 
@@ -611,8 +612,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (dayId === 'day22') {
-                display
-                christmasChallenge();
+                displayQuestion();
+                checkAnswer();
+                nextQuestion();
             }
             
             if (dayId === 'day31') {
