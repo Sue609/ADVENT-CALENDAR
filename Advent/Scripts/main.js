@@ -648,6 +648,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     </div>`;
                     break;
+                
+                case 'day30':
+                    content += `
+                        <div class='recipe-container'>
+                            <h1>New Year's Resolution - Highlights</h1>
+                            <p>As there years comes to an end lets make our weaknesses for the previous year
+                                become our stength for this new year. Concentrate on making a positive impact this year
+                                and set goals that are achieveable.</p>
+        
+                            <h2>Key Focus Areas:</h2>
+                            <ol>
+                                <li><strong>Personal Development:</strong>
+                                    <ul>
+                                        <li>Reflect on past achievements and areas for growth.</li>
+                                        <li>Set SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound.</li>
+                                        <li>Create an action plan and track progress regularly.</li>
+                                        <li>Balance self-improvement with academic and personal life.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Time Management for Studies:</strong>
+                                    <ul>
+                                        <li>Effective time allocation for studies.</li>
+                                        <li>Set clear academic objectives and prioritize tasks.</li>
+                                        <li>Continuous learning and exploring new subjects or skills.</li>
+                                        <li>Maintain a balance between studies and personal well-being.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Planning for Success:</strong>
+                                    <ul>
+                                        <li>Divide larger goals into smaller, manageable tasks.</li>
+                                        <li>Allocate specific times for working towards each goal.</li>
+                                        <li>Stay Accountable.</li>
+                                        <li>Small steps each day.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Staying Balanced:</strong>
+                                    <ul>
+                                        <li>Remember to keep a balance of self-care and maintain a balance between academic pursuits and personal well-being.</li>
+                                        <li>Be adaptable and flexible in your goal-setting to accommodate changing circumstances.</li>
+                                        <li>Remember to keep an acountability diary.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Review and Adopt:</strong>
+                                    <ul>
+                                        <li>Periodically review your goals and make adjustments and tick off whatever you have been able to achieve.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    `;
+                    break;
 
                     case 'day31':
                         content = "<h2>Set Your 2024 Goals</h2>";
