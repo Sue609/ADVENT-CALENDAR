@@ -759,7 +759,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (dayId == 'day16') {
                 puzzle();
-                dragEnd();
             }
             if (dayId === 'day18') {
                 generateWordSearch();
@@ -777,6 +776,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 displayQuestion();
                 checkAnswer();
                 nextQuestion();
+            }
+
+            if (dayId === 'day29') {
+                puzzleLogo();
             }
             
             if (dayId === 'day31') {
