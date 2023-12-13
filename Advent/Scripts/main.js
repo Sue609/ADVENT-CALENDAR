@@ -488,8 +488,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p><strong>Objective:</strong> Rearrange the tiles to form the original image or correct number sequence.</p>
                             <p><strong>How to Play:</strong></p>
                             <ul>
-                                <li>Drag and drop tiles into adjacent empty spaces to move them.</li>
-                                <li>You can move the tiles in any direction.</li>
+                                <li>Drag and drop tiles in any direction to make a complete image</li>
+
                             </ul>
                         </div>
                     
@@ -499,8 +499,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                     `;
-                    break;
-                    
+                    break;                  
 
                 case 'day17':
                     content = `
@@ -648,6 +647,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     </div>`;
                     break;
+
+                case 'day29':
+                    content += `
+                    <div class='recipe-container'>
+                        <h2>Sliding Tile Puzzle</h3>
+                        <div id="instructions">
+                            <p>How well do you know the ALX logo</p>
+                            <p><strong>Objective:</strong> Rearrange the tiles to form the original image or correct number sequence.</p>
+                            <p><strong>How to Play:</strong></p>
+                            <ul>
+                                <li>Drag and drop tiles in any direction to make a complete image</li>
+                            </ul>
+                        </div>
+                    
+                        <div class='body'>
+                            <div id='board'>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                    break;
+                
                 
                 case 'day30':
                     content += `
