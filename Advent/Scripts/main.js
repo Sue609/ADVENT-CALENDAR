@@ -231,6 +231,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>`;
                     break;
 
+                case 'day9':
+                    content += `
+                            <div class='recipe-container'>
+                                <h2>Nuggets of wisdom</h2>
+                                <img src='/Advent/images/alx image.png' class='nightImage'>
+                            </div>
+                            `;
+                    break;
+
                 case 'day10':
                     content += `
                     <div class='day10'>
@@ -260,6 +269,41 @@ document.addEventListener('DOMContentLoaded', function() {
                         eloved Christmas song and a classic character associated with Santa's reindeer team.</p>
                     </div>
                     `;
+                    break;
+
+                case 'day13':
+                    content += `
+                        <div class='recipe-container'>
+                            <h2>Sharing my ALX journey so far<h2>
+                            <p>I rember applying to the ALX program just like yesterday. Infact I'll never forget the day
+                            it was on 12th August 2022. I was both excited and nervous about the prospect of being accepted
+                            as a student.</p>
+                            <p>Forward to January 2023 I was accepted officially.  I was so scared about this journey especially coming
+                            from a non-tech background. The first month was extremely hard no cap there was nothing easy about it. 
+                            As I look back I remember battling 'Betty' during the first days that
+                            was a nightmare I just did not understand the concept of 'Betty'.</p>
+                            <p>Then came the 'Gates of Hell' what made so nervous about this project was the thought of differing
+                            especially when reading online about how hard the project was anyway eventually we were able to conquer
+                            the shell project.
+                            I'm so grateful that ALX became my guiding light, providing an inclusive
+                            platform that has continued to encourage diverse backgrounds and nurturing growth.</p>
+
+                            <p>There has been so many concepts up until now that still seem alien which have become
+                            stepping stones through engaging workshops, the mentorship and
+                            even the projects have really impacted some very important skills especially the concept of
+                            resilience and discipline.
+
+                            This has become one of the best opportunities that I've gotten because through this I have been able to apply to 
+                            even more scholarships which have been so rewarding and also being able to interact with like minded persons.</p>
+                            <p>I have never had the courage to put myself out there and apply to numerous jobs at a go, through ALX the impact
+                            to my career trajectory has been so profound, I'm more confident in my skills and the fact that I know the contribution
+                            that I can make to a company. It has laid the foundation for a career built on determination and a hunger for continuous growth.
+                            </p>
+                            <p>My journey into software engineering through ALX Africa has been transformative. I'm grateful for the perseverance instilled
+                                in me and the skills acquired.
+                                I carry forward this newfound passion, eager to contribute meaningfully to the ever-evolving tech world.
+                            </p>
+                        </div>`;
                     break;
 
                 case 'day14':
