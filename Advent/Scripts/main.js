@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p><strong>How to Play:</strong></p>
                             <ul>
                                 <li>Drag and drop tiles into adjacent empty spaces to move them.</li>
-                                <li>You can only move tiles that are adjacent to the empty space.</li>
+                                <li>You can move the tiles in any direction.</li>
                             </ul>
                         </div>
                     
