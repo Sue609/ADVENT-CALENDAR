@@ -446,6 +446,14 @@ document.addEventListener('DOMContentLoaded', function() {
                             <h4 style='font-size: 16px;'>“The only way that we can justify privilege is by solving the world's biggest problems, and by doing hard things.”</h4>
                         </div>`
                     break;
+
+                case 'day18':
+                    content += `
+                        <h1>Holiday Word Search Puzzle</h1>
+                        <table id="wordSearch">
+                        </table>
+                        `;
+                        break;
                     
                 case 'day20':
                     content += `
@@ -570,22 +578,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>`;
                     break;
 
-                case 'day31':
-                    content = "<h2>Set Your 2024 Goals</h2>";
-                    content += "<label for='textColor' style='font-size: 20px;'>Choose Text Color:</label>";
-                    content += "<input type='color' id='textColorPicker'>";
-                    content += "<label for='fontSize' style='font-size: 20px;'>Choose Font Size:</label>";
-                    content += "<select id='fontSize'>";
-                    content += "<option value='12px'>12px</option>";
-                    content += "<option value='14px'>14px'>14px</option>";
-                    content += "<option value='16px'>16px'>16px</option>";
-                    content += "</select>";
-                    content += "<textarea id='goalTextArea' rows='5' placeholder='Write your goals here...'></textarea>";
-                    content += "<button class='day31-button' id='saveButton' style='font-size: 20px;'>Save Goals</button>";
-                    break;
+                    case 'day31':
+                        content = "<h2>Set Your 2024 Goals</h2>";
+                        content += "<label for='textColor' style='font-size: 20px;'>Choose Text Color:</label>";
+                        content += "<input type='color' id='textColorPicker'>";
+                        content += "<label for='fontSize' style='font-size: 20px;'>Choose Font Size:</label>";
+                        content += "<select id='fontSize'>";
+                        content += "<option value='12px'>12px</option>";
+                        content += "<option value='14px'>14px'>14px</option>";
+                        content += "<option value='16px'>16px'>16px</option>";
+                        content += "</select>";
+                        content += "<textarea id='goalTextArea' rows='5' placeholder='Write your goals here...'></textarea>";
+                        content += "<button class='buttons' id='saveButton' style='font-size: 20px;'>Save Goals</button>";
+                        break;
 
-                default:
-                    content = "<p>No content available.</p>";
+                    default:
+                        content = "<p>No content available.</p>";
             }
 
             contentDisplay.innerHTML = content;
@@ -598,12 +606,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 hangmanGame();
             }
 
-            if (dayId == 'day6') {
+            if (dayId === 'day6') {
                 courageStories();
             }
 
-            if (dayId == 'day15') {
+            if (dayId === 'day15') {
                 memoryGame();
+            }
+
+            if (dayId === 'day18') {
+                generateWordSearch();
+                handleClick();
+                getSelectedWord();
+                clearSelectedLetters();
             }
 
 
