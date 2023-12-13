@@ -73,17 +73,23 @@ document.addEventListener('DOMContentLoaded', function() {
                     break;
                 case 'day8':
                     content += `
-                        <div class="puzzle-container">
-                            <h2>Daily Holiday Puzzle</h2>
-                            <div class="puzzle">
-                                <div class="puzzle-piece" id="piece1">1</div>
-                                <div class="puzzle-piece" id="piece2">2</div>
-                                <div class="puzzle-piece" id="piece3">3</div>
-                                <div class="puzzle-piece" id="piece4">4</div>
-                                <!-- Add more puzzle pieces here -->
-                            </div>
-                            <button onclick="checkSolution()">Check Solution</button>
-                            <p id="result"></p>
+                        <div class="recipe-container">
+                            <h2>Fun Family Holiday Activities</h2>
+                            <ol>
+                                <li>Desing Christmas Cards</li>
+                                <li>Keepsake gifts for loved ones</li>
+                                <li>Watch classic Christmas movies(don't forget Home Alone 😊)</li>
+                                <li>Baking - cookies, cakes, ginger bread</li>
+                                <li>Decorating christmas tree</li>
+                                <li>Feeding the street families</li>
+                                <li>Cooking festive meals</li>
+                                <li>Story telling</li>
+                                <li>Taking pictures</li>
+                                <li>Holiday guessing games</li>
+                                <li>Hosting get-togethers</li>
+                                <li>scavenger hunt</li>
+                                <li>Movie Marathon</li>
+                            </ol>  
                         </div>
                         `;
                     break;
@@ -464,13 +470,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 case 'day16':
                     content += `
-                        <body class='body'>
-                            <img id='title' src='/Advent/images/christmasPuzzle/puzzle.webp'>
+                    <div class='recipe-container'>
+                        <h2>Sliding Tile Puzzle</h3>
+                        <div id="instructions">
+                            <h3>Instructions</h3>
+                            <p><strong>Objective:</strong> Rearrange the tiles to form the original image or correct number sequence.</p>
+                            <p><strong>How to Play:</strong></p>
+                            <ul>
+                                <li>Drag and drop tiles into adjacent empty spaces to move them.</li>
+                                <li>You can only move tiles that are adjacent to the empty space.</li>
+                            </ul>
+                        </div>
+                    
+                        <div class='body'>
                             <div id='board'>
-                            <h2>Turns: <span id=tuns>0</span><h2>
-
                             </div>
-                        </body>
+                        </div>
+                    </div>
                     `;
                     break;
                     
@@ -658,6 +674,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 memoryGame();
             }
 
+            if (dayId == 'day16') {
+                puzzle();
+                dragEnd();
+            }
             if (dayId === 'day18') {
                 generateWordSearch();
                 handleClick();
