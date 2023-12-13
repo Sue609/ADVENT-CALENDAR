@@ -591,6 +591,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>`;
                     break;
 
+                case 'day23':
+                    content += `
+                        <div class='recipe-container'>
+                            <img src='/Advent/images/img.jpg'>
+                        </div>
+                    `;
+                    break;
+
                 case 'day24':
                     content += `
                     <div class='recipe-container'>
@@ -636,6 +644,14 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p>Here's a soothing Christmas carol to accompany your moments of reflection and joy:</p>
                         <div class="video-container">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/AkgthWPHnrM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    `;
+                    break;
+
+                case 'day26':
+                    content += `
+                        <div class='recipe-container'>
+                            <img src='/Advent/images/Christmas.png'>
                         </div>
                     `;
                     break;
