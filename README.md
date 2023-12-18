@@ -21,8 +21,6 @@ This project is an interactive Advent calendar designed to spread joy and celebr
 ### Shared Holiday Movies
 - Engage in the joy of the season with a curated collection of recommended holiday-themed movies to enjoy each day.
 
-- NB/ Kindly please download the repo directly I'm having a hard time also cloning and it might also affect anyone else trying to access. Thank you in advance
-
 ## Project Style
 
 The project embodies a cheerful and celebratory atmosphere, incorporating vibrant holiday colors, festive imagery, and interactive elements to engage users throughout the Advent calendar journey. It aims to create an immersive experience that evokes the warmth and magic of the holiday season.
@@ -32,3 +30,6 @@ The project embodies a cheerful and celebratory atmosphere, incorporating vibran
 Join us in celebrating the joys of Christmas by participating in the December Holiday Advent Calendar! Share the festive spirit with friends and family, and spread the happiness of the holiday season by encouraging others to join this interactive experience.
 
 We hope this Advent calendar brings you joy, laughter, and a sense of togetherness as we celebrate the most wonderful time of the year! 🌟🎁🎉
+
+
+- NB/ Kindly please download the repo directly I'm having a hard time also cloning and it might also affect anyone else trying to access. Thank you in advance
